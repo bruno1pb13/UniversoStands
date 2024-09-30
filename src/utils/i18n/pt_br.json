@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "lang" : "Idioma"
+    },
+    "home": {
+        "slogan" : ["Construindo um universo de", "possibilidades para você!"],
+        "portfolio": {
+            "title" : "Vejá nosso portifólio",
+            "text_01": "Explore o nosso portfólio de projetos personalizados e inovadores. Nossa equipe transforma suas ideias em realidade, criando stands que destacam sua marca e atraem seu público-alvo. Cada projeto é desenvolvido com atenção aos detalhes e um compromisso inabalável com a qualidade. Descubra como podemos ajudar a elevar sua presença em eventos.",
+            "redirect_button": "Confira alguns projetos"
+        },
+        "depoiments": {
+            "title": "Depoimentos"
+        },
+        "callUs": {
+            "title" : ["Fale conosco", "Nosso time está aqui para ajudar"]
+        }
+    }
+}

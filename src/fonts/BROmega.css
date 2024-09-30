@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-Black-BF6556cee4bd4a0.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-BlackItalic-BF6556cee501b48.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-Bold-BF6556cee4cf0f3.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-BoldItalic-BF6556cee50cc1c.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-ExtraLight-BF6556cee4e04f3.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-ExtraLightItalic-BF6556cee4e8ecc.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-Light-BF6556cee4cdfb5.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-LightItalic-BF6556cee4df33d.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-Medium-BF6556cee4bc2e2.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-MediumItalic-BF6556cee4ec01d.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-Regular-BF6556cee4c0d2e.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-RegularItalic-BF6556cee4d38eb.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-SemiBold-BF6556cee507ac6.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-SemiBoldItalic-BF6556cee4dda03.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-Thin-BF6556cee4c7922.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BROmega';
+    src: url('BROmega-ThinItalic-BF6556cee4e448f.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+  }

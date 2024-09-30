@@ -1,0 +1,19 @@
+{
+    "nav": {
+        "lang" : "Language"
+    },
+    "home": {
+        "slogan" : ["Building a universe of", "possibilities for you!"],
+        "portfolio": {
+            "title" : "See our portfolio",
+            "text_01": "Explore our portfolio of personalized and innovative projects. Our team transforms your ideas into reality, creating stands that highlight your brand and attract your target audience. Each project is developed with attention to detail and an unwavering commitment to quality. Discover how we can help elevate your presence at events.",
+            "redirect_button": "Check out some projects"
+        },
+        "depoiments": {
+            "title": "Testimonials"
+        },
+        "callUs": {
+            "title" : ["Contact us", "Our team is here to help"]
+        }
+    }
+}
