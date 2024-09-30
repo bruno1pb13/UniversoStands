@@ -6,17 +6,26 @@
                     <img src="/assets/LogoBranca.png" alt="" class="w-[18em]">
                 </div>
                 <div class="flex flex-col">
-                    <span>Telefone</span>
+                    <span>{{$t('footer.phone')}}</span>
                     <span>(11) 9 9999-9999</span>
                     <span>(11) 9999-9999</span>
                 </div>
                 <div class="flex flex-col">
-                    <span>Email</span>
+                    <span>{{$t('footer.mail')}}</span>
                     <span>universo@universostands.com</span>
                     <span>universostands@gmail.com</span>
                 </div>
+                
                 <div class="flex flex-col">
-                    <span>Redes sociais</span>
+                    <span>LGPD</span>
+                    <ul>
+                        <li>Política de Privacidade</li>
+                        <li>Política de Segurança da informação</li>
+                        <li>Preferências de Cookies</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <span>{{$t('footer.social')}}</span>
                     <div class="flex gap-4 items-center justify-between">
                         <div>
                             <img src="/assets/icons/instagram.svg" class="w-[1.5em] invert" alt="">

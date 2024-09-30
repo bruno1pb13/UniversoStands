@@ -9,8 +9,8 @@ export default{
 
 <template>
     <section class="h-[30em] mt-[10em] flex flex-col gap-[4em] text-center ">
-        <h1 class="font-bold text-[40px]">Feiras</h1>
-        <span class="text-[20px] px-[14em]">Participar de feiras é uma oportunidade única para destacar sua marca e alcançar novos clientes. Estamos presentes nos maiores eventos do setor, proporcionando soluções criativas e funcionais que impulsionam o seu sucesso. Explore abaixo alguns dos eventos em que marcamos presença.</span>
+        <h1 class="font-bold text-[40px]">{{$t('fairs.title')}}</h1>
+        <span class="text-[20px] px-[14em]">{{$t('fairs.description')}}</span>
         <FeirasCarrousel/>
     </section>
     <section class="px-[7em] py-[10em]">

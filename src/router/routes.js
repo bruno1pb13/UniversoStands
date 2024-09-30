@@ -15,19 +15,16 @@ export default [
         path: '/feiras',
         name: 'FEIRAS',
         component: () => import("../views/Feiras.vue"),
-        props: {
-          LogoRosa: true
-        }
       },
       {
         path: '/stands',
         name: 'STANDS',
-        component: () => import("../views/Home.vue"),
+        component: () => import("../views/Stands.vue"),
       },
       {
         path: '/sobre',
         name: 'ABOUT',
-        component: () => import("../views/Home.vue"),
+        component: () => import("../views/About.vue"),
       }
     ]
   },

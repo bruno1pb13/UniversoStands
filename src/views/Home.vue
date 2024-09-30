@@ -42,7 +42,7 @@ export default {
         <portfolioSection />
 
         <div class="flex flex-col pt-[14vh] pb-[20vh] gap-[7vw]">
-            <span class="text-center text-[40px] font-bold">Parceiros </span>
+            <span class="text-center text-[40px] font-bold">{{$t('home.partners')}} </span>
             <partnersCarrousel />
         </div>
 

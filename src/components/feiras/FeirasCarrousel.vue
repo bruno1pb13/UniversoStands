@@ -7,50 +7,63 @@ export default {
 
   data(){
     return{
-      products: [{
-          image: "123",
-          name: "123",
+      fairs: [{
+          image: "/assets/fairs/abup_logo.png",
+          name: "Abup decor show",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/ajorsul_logo.webp",
+          name: "XXXIV Ajorsul fair mercoóptica 2024",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/autopar.png",
+          name: "Autopar 12ª Feira de fornecedores da indústria automotiva",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/eletrometal_logo.png",
+          name: "Eletro Metal Mecânica 2024",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/escolar.png",
+          name: "Escolar office Brasil",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/expoagas.png",
+          name: "Expoagas",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/feira_hospitalar.png",
+          name: "Hospitalar By Informa Markets",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/fispal_tec.webp",
+          name: "Fispal Tecnologia 2025",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/logo_construsul.png",
+          name: "Construsul",
       },
       {
-          image: "123",
-          name: "123",
+          image: "/assets/fairs/logo_febratex.png",
+          name: "Feira Brasileira para a indústria têxtil",
       },
       {
-          image: "123",
-          name: "123",
-      }] 
+          image: "/assets/fairs/logo_intersolar.png",
+          name: "inter solar connection solar business | South America",
+      },
+      {
+          image: "/assets/fairs/logo_pet.png",
+          name: "pet",
+      },
+      {
+          image: "/assets/fairs/movelsul_logo.jpg",
+          name: "Movelsul, Feira de móveis | Brasil",
+      },
+      {
+          image: "/assets/fairs/siavs_logo.png",
+          name: "SIAVS, Salão internacional de proteína animal",
+      }
+    ] 
     }
   },
   components: {
@@ -61,9 +74,10 @@ export default {
 </script>
 
 <template>
-  <Carousel :value="products" :numVisible="6" :numScroll="1" circular :autoplayInterval="3000">
+  <Carousel :value="fairs" :numVisible="6" :numScroll="1" circular :autoplayInterval="3000">
     <template #item="slotProps">
-        <div class="border border-surface-200 rounded bg-gray-500 h-[10em] w-[13em] p-4 m-4">
+        <div class=" rounded h-[10em] w-[13em] p-4 m-4 flex items-center justify-center">
+            <img :src="slotProps.data.image" alt="" srcset="">
         </div>
     </template>
 </Carousel>

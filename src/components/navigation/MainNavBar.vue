@@ -5,13 +5,9 @@ export default {
     data() {
         return {
             currentPage: undefined,
-            pages: [
-                { name: 'Home', key: 'HOME' },
-                { name: 'Feiras', key: 'FEIRAS' },
-                { name: 'Stands', key: 'STANDS' },
-                { name: 'Sobre', key: 'ABOUT' }
-            ],
-            logo: "/assets/LogoBranca.png"
+
+            logo: "/assets/LogoBranca.png",
+            langModal: false
         }
     },
     setup() {
@@ -27,15 +23,19 @@ export default {
 
         this.currentPage = this.$route.name
 
-        if (["FEIRAS"].includes(this.currentPage)) {
+        if (["FEIRAS", "ABOUT"].includes(this.currentPage)) {
             this.logo = "/assets/LogoRosa.png"
         }
 
-        this.updateIndicator()
+        this.$nextTick(() => {
+            this.updateIndicator()
+        })
 
         this.$router.afterEach(() => {
             this.currentPage = this.$route.name
-            this.updateIndicator();
+            this.$nextTick(() => {
+                this.updateIndicator()
+            })
         });
 
         window.addEventListener('resize', this.handleResize);
@@ -55,8 +55,17 @@ export default {
         });
     },
     methods: {
-        redirectTo(page) {
-            this.$router.push({ name: page });
+        redirectTo(page, id) {
+            if (id) {
+                return this.$router.push({ name: page, hash: `#${id}` }).then(() => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+
+            return this.$router.push({ name: page });
         },
         updateIndicator() {
             const activeButton = document.querySelector('.menu-item.active');
@@ -71,15 +80,31 @@ export default {
         },
         handleResize() {
             // Função específica para o evento de resize
-            this.updateIndicator("resize");
+            this.$nextTick(() => {
+                this.updateIndicator("resize")
+            })
+        },
+        setLanguageHandler(lang) {
+            this.langModal = false
+            this.setLanguage(lang)
         }
+    },
+    computed: {
+        pages() {
+            return [
+                { name: this.$t('nav.pages.home'), key: 'HOME' },
+                { name: this.$t('nav.pages.fairs'), key: 'FEIRAS' },
+                { name: this.$t('nav.pages.stands'), key: 'STANDS' },
+                { name: this.$t('nav.pages.about'), key: 'ABOUT' }
+            ];
+        },
     }
 }
 </script>
 
 <template>
     <nav
-        class="z-100 absolute top-8 left-1/2 transform -translate-x-1/2 w-[85vw] flex flex-wrap items-center justify-between">
+        class="z-[100] absolute top-8 left-1/2 transform -translate-x-1/2 w-[85vw] flex flex-wrap items-center justify-between">
         <div class="flex items-center justify-start w-[50%] sm:w-auto">
             <img :src="logo" alt="Logo" class="w-[50%] sm:w-40 h-auto">
         </div>
@@ -87,7 +112,7 @@ export default {
         <div v-if="currentPage" id="pages" class="flex pill rounded-full overflow-hidden relative mt-4 sm:mt-0">
             <div class="bg-indicator"></div>
             <button v-for="page in pages" :key="page.key" :class="['menu-item', { 'active': currentPage == page.key }]"
-                class="hover:bg-white rounded-full px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base"
+                class="hover:bg-white btn rounded-full px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base"
                 @click="redirectTo(page.key)">
                 {{ page.name }}
             </button>
@@ -95,18 +120,32 @@ export default {
 
         <div class="flex gap-4 mt-4 sm:mt-0">
             <div class="flex pill rounded-full h-full relative">
-                <button class="flex items-center justify-center">
+                <button @click="() => langModal = !langModal" class="flex btn items-center justify-center">
                     <img src="/assets/flags/pt-br.png" class="w-10 h-auto">
                 </button>
-                <div id="modal"
-                    class="absolute h-[8em] w-[17em] bg-[white]  top-full left-0 mt-[1em] rounded shadow-2xl">
-                    <span>{{ $t('nav.lang') }}</span>
-                    <button @click="setLanguage('pt_br')" class="text-[black]">pt</button>
-                    <button @click="setLanguage('en_us')">en</button>
+                <div id="langSelection" v-if="langModal"
+                    class="absolute w-[17em] bg-[white]  top-full left-0 mt-[1em] rounded shadow-2xl flex flex-col p-4">
+
+                    <span class="text-[20px]">{{ $t('nav.lang.title') }}</span>
+                    <div id="divider" class="h-[3px] w-[80%] mx-auto bg-[#E6007E] rounded my-4"></div>
+                    <data value="" class="flex flex-col">
+                        <button @click="setLanguageHandler('en_us')" class="flex gap-4 items-center">
+                            <section class="w-10 h-auto">
+                                <img src="/assets/flags/en-us.png" alt="" srcset="">
+                            </section>
+                            <section>{{ $t('nav.lang.en_us') }}</section>
+                        </button>
+                        <button @click="setLanguageHandler('pt_br')" class="flex gap-4 items-center">
+                            <section class="w-10 h-auto">
+                                <img src="/assets/flags/pt-br.png" alt="" srcset="">
+                            </section>
+                            <section>{{ $t('nav.lang.pt_br') }}</section>
+                        </button>
+                    </data>
                 </div>
             </div>
             <div class="pill rounded-full px-4">
-                <button>Contato</button>
+                <button class="btn" @click="redirectTo('ABOUT', 'contact')">Contato</button>
             </div>
         </div>
     </nav>
@@ -119,7 +158,7 @@ export default {
     position: relative;
 }
 
-.pill button {
+.pill .btn {
     width: 100%;
     height: 60px;
     padding: 1em 2em;
@@ -149,7 +188,7 @@ export default {
     z-index: 0;
 }
 
-.pill button:hover {
+.pill .btn:hover {
     background-color: transparent;
 }
 </style>

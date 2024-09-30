@@ -1,19 +1,84 @@
 {
     "nav": {
-        "lang" : "Idioma"
+        "pages" : {
+            "home": "Home",
+            "fairs": "Feiras",
+            "stands": "Stands",
+            "about": "Sobre"
+        },
+        "lang": {
+            "title": "Idiomas",
+            "pt_br": "Português",
+            "en_us": "Inglês"
+        },
+        "contact" : "Contato"
+    },
+    "footer": {
+        "phone": "Telefone",
+        "mail": "Email",
+        "social": "Redes sociais"
     },
     "home": {
         "slogan" : ["Construindo um universo de", "possibilidades para você!"],
+        "metrics": {
+            "customers_Served" : "Clientes Atendidos",
+            "mounted_Fairs" : "Feiras Montadas",
+            "M² Built" : "M² Construídos"
+        },
         "portfolio": {
             "title" : "Vejá nosso portifólio",
             "text_01": "Explore o nosso portfólio de projetos personalizados e inovadores. Nossa equipe transforma suas ideias em realidade, criando stands que destacam sua marca e atraem seu público-alvo. Cada projeto é desenvolvido com atenção aos detalhes e um compromisso inabalável com a qualidade. Descubra como podemos ajudar a elevar sua presença em eventos.",
             "redirect_button": "Confira alguns projetos"
         },
+        "partners": "Parceiros",
         "depoiments": {
             "title": "Depoimentos"
         },
         "callUs": {
-            "title" : ["Fale conosco", "Nosso time está aqui para ajudar"]
+            "title" : "Fale conosco",
+            "subtitle" : "Nosso time está aqui para ajudar"
+        }
+    },
+    "fairs": {
+        "title": "Feiras",
+        "description": "Participar de feiras é uma oportunidade única para destacar sua marca e alcançar novos clientes. Estamos presentes nos maiores eventos do setor, proporcionando soluções criativas e funcionais que impulsionam o seu sucesso. Explore abaixo alguns dos eventos em que marcamos presença."
+    },
+    "stands": {
+        "scenographic": {
+            "title": "Stand Cenográfico",
+            "description": "Na modalidade Diamante você receberá todos os materiais da categoria Ouro com o acréssimo de mais paisagismo, iluminação especial de led e projetos mais sofisticados e cenográficos, tudo para deixar o seu stand com mais destaque no evento!"
+        },
+        "mixed": {
+            "title": "Stand Misto",
+            "description": "Na modalidade Ouro você terá um stand totalmente construído em madeira, estruturas metálicas e revestimentos da sua preferência como napa, lona ou tecido, além de mobiliário e iluminação personalizada e paisagismo básico."
+        },
+        "basic": {
+            "title": "Stand Basico",
+            "description": "Nessa modalidade você terá um stand misto, construído com material básico em alumínio, octanorme e ou vidro, sendo uma excelente opção para quem busca baixo cus"
+        }
+    },
+    "about": {
+        "title": "ENTENDER SUAS NECESSIDADES É O PRINCÍPIO DO NOSSO ATENDIMENTO",
+        "mission": {
+            "title": "Qual a nossa missão?",
+            "description": "Criar vínculos fortes e duradouros com os nossos clientes, fornecendo-lhes as melhores marcas, produtos e serviços."
+        },
+        "vision": {
+            "title": "Nossa visão",
+            "description": "Crescer de forma sustentável e planejada. Tornar-se referência em qualidade e atendimento, consolidando a marca no mercado nacional, mantendo acima de tudo a alegria, a harmonia e a satisfação dos nossos clientes."
+        },
+        "values": {
+            "title": "Nossos valores",
+            "description": "Agir de forma correta, ética e transparente, a vida em primeiro lugar, valorizar quem faz a nossa empresa, crescer e evoluir juntos, cuidar do nosso planeta e fazer acontecer."
+        },
+        "contact": {
+            "title" : "Entre em contato com nosso time de vendas:",
+            "description": "Nossa equipe é formada por profissionais de todas as áreas, desde arquitetos, projetistas, finanças, marceneiros, eletricistas. Enfim, tudo para que você tenha a melhor experiencia no seu evento.",
+            "administrative": "Administrativo",
+            "sales_manager": "Gerente de vendas",
+            "sales_team": "Time de vendas",
+            "phone": "Telefone / Whatsapp",
+            "address": "Endereço"
         }
     }
 }

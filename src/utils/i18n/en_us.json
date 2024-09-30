@@ -1,19 +1,84 @@
 {
     "nav": {
-        "lang" : "Language"
+        "pages": {
+            "home": "Home",
+            "fairs": "Fairs",
+            "stands": "Stands",
+            "about": "About"
+        },
+        "lang": {
+            "title": "Languages",
+            "pt_br": "Portuguese",
+            "en_us": "English"
+        },
+        "contact": "Contact"
+    },
+    "footer": {
+        "phone": "Phone",
+        "mail": "Email",
+        "social": "Social Media"
     },
     "home": {
-        "slogan" : ["Building a universe of", "possibilities for you!"],
+        "slogan": ["Building a universe of", "possibilities for you!"],
+        "metrics": {
+            "customers_Served": "Customers Served",
+            "mounted_Fairs": "Fairs Mounted",
+            "M² Built": "M² Built"
+        },
         "portfolio": {
-            "title" : "See our portfolio",
-            "text_01": "Explore our portfolio of personalized and innovative projects. Our team transforms your ideas into reality, creating stands that highlight your brand and attract your target audience. Each project is developed with attention to detail and an unwavering commitment to quality. Discover how we can help elevate your presence at events.",
+            "title": "View our portfolio",
+            "text_01": "Explore our portfolio of customized and innovative projects. Our team transforms your ideas into reality, creating stands that highlight your brand and attract your target audience. Each project is developed with attention to detail and an unwavering commitment to quality. Discover how we can help elevate your presence at events.",
             "redirect_button": "Check out some projects"
         },
+        "partners": "Partners",
         "depoiments": {
             "title": "Testimonials"
         },
         "callUs": {
-            "title" : ["Contact us", "Our team is here to help"]
+            "title": "Contact us",
+            "subtitle": "Our team is here to help"
+        }
+    },
+    "fairs": {
+        "title": "Fairs",
+        "description": "Participating in fairs is a unique opportunity to highlight your brand and reach new customers. We are present at the largest events in the sector, providing creative and functional solutions that drive your success. Explore below some of the events where we have made our presence known."
+    },
+    "stands": {
+        "scenographic": {
+            "title": "Scenographic Stand",
+            "description": "In the Diamond category, you will receive all the materials from the Gold category with the addition of more landscaping, special LED lighting, and more sophisticated and scenographic projects, all to make your stand stand out more at the event!"
+        },
+        "mixed": {
+            "title": "Mixed Stand",
+            "description": "In the Gold category, you will have a stand fully constructed in wood, metal structures, and coverings of your choice such as nappa leather, canvas, or fabric, as well as custom furniture and lighting, and basic landscaping."
+        },
+        "basic": {
+            "title": "Basic Stand",
+            "description": "In this category, you will have a mixed stand, built with basic materials in aluminum, octanorm, and/or glass, being an excellent option for those looking for low cost"
+        }
+    },
+    "about": {
+        "title": "UNDERSTANDING YOUR NEEDS IS THE PRINCIPLE OF OUR SERVICE",
+        "mission": {
+            "title": "What is our mission?",
+            "description": "To create strong and lasting bonds with our customers, providing them with the best brands, products, and services."
+        },
+        "vision": {
+            "title": "Our vision",
+            "description": "To grow in a sustainable and planned manner. To become a reference in quality and service, consolidating the brand in the national market, maintaining above all the joy, harmony, and satisfaction of our customers."
+        },
+        "values": {
+            "title": "Our values",
+            "description": "To act correctly, ethically, and transparently, life comes first, value those who make our company, grow and evolve together, care for our planet, and make it happen."
+        },
+        "contact": {
+            "title": "Contact our sales team:",
+            "description": "Our team is made up of professionals from all areas, including architects, designers, finance, carpenters, electricians. In short, everything so that you have the best experience at your event.",
+            "administrative": "Administrative",
+            "sales_manager": "Sales Manager",
+            "sales_team": "Sales Team",
+            "phone": "Phone / WhatsApp",
+            "address": "Address"
         }
     }
 }

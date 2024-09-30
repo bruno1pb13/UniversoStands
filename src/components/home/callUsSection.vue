@@ -9,8 +9,8 @@ export default {
     <div class="grid grid-cols-8 grid-rows-4 gap-4 p-[7vw] gap-[7vw]">
         <div class="col-span-3">
             <div class="flex flex-col leading-none">
-                <span class="font-bold text-[40px]">{{ $t('home.callUs.title[0]') }}</span>
-                <span class="text-[15px]">{{ $t('home.callUs.title[1]') }}</span>
+                <span class="font-bold text-[40px]">{{ $t('home.callUs.title') }}</span>
+                <span class="text-[15px]">{{ $t('home.callUs.subtitle') }}</span>
             </div>
         </div>
         <div class="col-span-3 row-span-2 col-start-1 row-start-2 flex flex-col gap-[2em]">
