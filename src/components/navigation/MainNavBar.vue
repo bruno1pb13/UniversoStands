@@ -5,9 +5,9 @@ export default {
     data() {
         return {
             currentPage: undefined,
-
             logo: "/assets/LogoBranca.png",
-            langModal: false
+            langModal: false,
+            currentFlag: "/assets/flags/pt-br.png"
         }
     },
     setup() {
@@ -22,10 +22,6 @@ export default {
     mounted() {
 
         this.currentPage = this.$route.name
-
-        if (["FEIRAS", "ABOUT"].includes(this.currentPage)) {
-            this.logo = "/assets/LogoRosa.png"
-        }
 
         this.$nextTick(() => {
             this.updateIndicator()
@@ -51,6 +47,11 @@ export default {
         this.$nextTick(() => {
             setTimeout(() => {
                 this.updateIndicator();
+                if (["FEIRAS", "ABOUT"].includes(this.currentPage)) {
+                    this.logo = "/assets/LogoRosa.png"
+                }else{
+                    this.logo = "/assets/LogoBranca.png"
+                }
             }, 100)
         });
     },
@@ -87,6 +88,10 @@ export default {
         setLanguageHandler(lang) {
             this.langModal = false
             this.setLanguage(lang)
+            this.updateCurrentFlag(lang)
+        },
+        updateCurrentFlag(lang) {
+            this.currentFlag = lang === 'en_us' ? "/assets/flags/en-us.png" : "/assets/flags/pt-br.png"
         }
     },
     computed: {
@@ -98,7 +103,15 @@ export default {
                 { name: this.$t('nav.pages.about'), key: 'ABOUT' }
             ];
         },
-    }
+    },
+    watch: {
+        locale: {
+            immediate: true,
+            handler(newLocale) {
+                this.updateCurrentFlag(newLocale)
+            }
+        }
+    },
 }
 </script>
 
@@ -121,7 +134,7 @@ export default {
         <div class="flex gap-4 mt-4 sm:mt-0">
             <div class="flex pill rounded-full h-full relative">
                 <button @click="() => langModal = !langModal" class="flex btn items-center justify-center">
-                    <img src="/assets/flags/pt-br.png" class="w-10 h-auto">
+                    <img :src="currentFlag" class="w-10 h-auto">
                 </button>
                 <div id="langSelection" v-if="langModal"
                     class="absolute w-[17em] bg-[white]  top-full left-0 mt-[1em] rounded shadow-2xl flex flex-col p-4">

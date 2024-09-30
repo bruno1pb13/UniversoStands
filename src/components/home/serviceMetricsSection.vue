@@ -35,15 +35,15 @@ export default{
     <div class="flex align-center justify-between px-[14vw] text-center mb-[10em] mt-[5em]">
         <div class="flex flex-col w-[18vw]">
             <span class="font-bold text-[82px]" id="clientes">{{ clientes }}</span>
-            <span class="text-[30px]">Clientes Atendidos</span>
+            <span class="text-[30px]">{{$t('home.metrics.customers_served')}}</span>
         </div>
         <div class="flex flex-col w-[18vw]">
             <span class="font-bold text-[82px]" id="feiras">{{ feiras }}</span>
-            <span class="text-[30px]">Feiras Montadas</span>
+            <span class="text-[30px]">{{$t('home.metrics.mounted_fairs')}}</span>
         </div>
         <div class="flex flex-col w-[18vw]">
             <span class="font-bold text-[82px]" id="metros">{{ metros }}</span>
-            <span class="text-[30px]">M² Construídos</span>
+            <span class="text-[30px]">{{$t('home.metrics.m_Built')}}</span>
         </div>
     </div>
 </template>

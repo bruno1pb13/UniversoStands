@@ -10,7 +10,7 @@
         </div>
         <div class="pattern w-full h-[8em]"></div>
     </section>
-    <section class="px-[7em] py-[4em] flex flex-col gap-[4em]">
+    <section class="px-[7em] pt-[4em] flex flex-col gap-[4em]">
         <div class="flex flex-col">
             <span class="font-bold text-[30px]">{{$t('about.mission.title')}}</span>
             <span class="text-[30px]">{{$t('about.mission.description')}}</span>
@@ -21,13 +21,30 @@
         </div>
         <div class="flex flex-col">
             <span class="font-bold text-[30px]">{{$t('about.values.title')}}</span>
-            <span class="text-[30px]">{{$t('about.values.description')}}</span>
+            <ul class="flex flex-col gap-2">
+                <li>
+                    <span class="font-bold">{{$t('about.values.safety.title')}}</span>
+                    <span>{{$t('about.values.safety.description')}}</span>
+                </li>
+                <li>
+                    <span class="font-bold">{{$t('about.values.ethics.title')}}</span>
+                    <span>{{$t('about.values.ethics.description')}}</span>
+                </li>
+                <li>
+                    <span class="font-bold">{{$t('about.values.recognition.title')}}</span>
+                    <span>{{$t('about.values.recognition.description')}}</span>
+                </li>
+                <li>
+                    <span class="font-bold">{{$t('about.values.responsability.title')}}</span>
+                    <span>{{$t('about.values.responsability.description')}}</span>
+                </li>
+            </ul>
         </div>
     </section>
     <section id="contact">
         <div class="grid grid-cols-8 grid-rows-4 p-[7vw]">
-            <div class="col-span-4 row-span-1 ">
-                <div class="flex flex-col leading-none gap-8">
+            <div class="col-span-7 row-span-1 ">
+                <div class="flex flex-col gap-4">
                     <span class="font-bold text-[30px]">{{$t('about.contact.title')}}</span>
                     <span class="text-[15px]">{{$t('about.contact.description')}}</span>
                 </div>
@@ -83,8 +100,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-span-4 row-span-4 col-start-5 row-start-1 ">
-                <div class="w-[100%] h-[50em] rounded overflow-hidden bg-[black]">
+            <div class="col-span-4 row-span-3 col-start-5 row-start-2 ">
+                <div class="w-[100%] h-[35em] rounded overflow-hidden bg-[black]">
                     <iframe width="100%" height="100%" frameborder="0" scrolling="no"
                         marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20Schilling,%20576%20-%20Conj%20607%20-%20Vila%20Leopoldina+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">

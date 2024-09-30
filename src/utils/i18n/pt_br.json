@@ -21,9 +21,9 @@
     "home": {
         "slogan" : ["Construindo um universo de", "possibilidades para você!"],
         "metrics": {
-            "customers_Served" : "Clientes Atendidos",
-            "mounted_Fairs" : "Feiras Montadas",
-            "M² Built" : "M² Construídos"
+            "customers_served" : "Clientes Atendidos",
+            "mounted_fairs" : "Feiras Montadas",
+            "m_Built" : "M² Construídos"
         },
         "portfolio": {
             "title" : "Vejá nosso portifólio",
@@ -46,30 +46,45 @@
     "stands": {
         "scenographic": {
             "title": "Stand Cenográfico",
-            "description": "Na modalidade Diamante você receberá todos os materiais da categoria Ouro com o acréssimo de mais paisagismo, iluminação especial de led e projetos mais sofisticados e cenográficos, tudo para deixar o seu stand com mais destaque no evento!"
+            "description": "Aqui a imaginação é sem limites. Nessa modalidade você receberá todos os materiais do Stand Misto, com o acréscimo de mais paisagismo, iluminação especial em LED e projetos cenográficos mais sofisticados. Tudo para deixar a sua marca e seu stand super destacados na exposição."
         },
         "mixed": {
             "title": "Stand Misto",
-            "description": "Na modalidade Ouro você terá um stand totalmente construído em madeira, estruturas metálicas e revestimentos da sua preferência como napa, lona ou tecido, além de mobiliário e iluminação personalizada e paisagismo básico."
+            "description": "Nessa modalidade você terá a opção de um stand construído em madeira, estruturas metálicas e vidro. Os revestimentos podem variar de acordo com a sua preferência, o mobiliário e a iluminação são personalizados e o paisagismo é básico."
         },
         "basic": {
             "title": "Stand Basico",
-            "description": "Nessa modalidade você terá um stand misto, construído com material básico em alumínio, octanorme e ou vidro, sendo uma excelente opção para quem busca baixo cus"
+            "description": "Nessa modalidade você terá um stand construído com material básico em madeira, vidro ou ambos, com revestimentos básicos, sendo uma excelente opção para quem busca baixo custo."
         }
     },
     "about": {
         "title": "ENTENDER SUAS NECESSIDADES É O PRINCÍPIO DO NOSSO ATENDIMENTO",
         "mission": {
             "title": "Qual a nossa missão?",
-            "description": "Criar vínculos fortes e duradouros com os nossos clientes, fornecendo-lhes as melhores marcas, produtos e serviços."
+            "description": "Como a gravidade, a nossa missão é atrair e manter vínculos fortes com nossos clientes, entregando qualidade, os melhores produtos, as melhores marcas e o melhor serviço."
         },
         "vision": {
             "title": "Nossa visão",
-            "description": "Crescer de forma sustentável e planejada. Tornar-se referência em qualidade e atendimento, consolidando a marca no mercado nacional, mantendo acima de tudo a alegria, a harmonia e a satisfação dos nossos clientes."
+            "description": "Queremos crescer cada vez mais, de forma sustentável e planejada, nos tornando referência em qualidade e atendimento. Consolidar a nossa marca em âmbito nacional e internacional, mantendo acima de tudo a gentileza e a alegria, para gerar a mais alta satisfação dos nossos clientes."
         },
         "values": {
             "title": "Nossos valores",
-            "description": "Agir de forma correta, ética e transparente, a vida em primeiro lugar, valorizar quem faz a nossa empresa, crescer e evoluir juntos, cuidar do nosso planeta e fazer acontecer."
+            "safety" : {
+                "title": "SEGURANÇA: ",
+                "description": "A vida em primeiro lugar."
+            },
+            "ethics" : {
+                "title": "ÉTICA: ",
+                "description": "Agir de forma correta e transparente."
+            },
+            "recognition": {
+                "title": "RECONHECIMENTO: ",
+                "description": "Valorizar quem faz a nossa empresa crescer e evoluir."
+            },
+            "responsability" : {
+                "title": "RESPONSABILIDADE: ",
+                "description": "Juntos cuidar do nosso planeta e meio ambiente."
+            }
         },
         "contact": {
             "title" : "Entre em contato com nosso time de vendas:",
