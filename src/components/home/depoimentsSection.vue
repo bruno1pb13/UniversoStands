@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-5 grid-rows-5 bg-[#E6007E] p-[7vw] gap-[7vw] relative"
+    class="hidden sm:grid grid-cols-5 grid-rows-5 bg-[#E6007E] p-[7vw] gap-[7vw] relative"
   >
     <div
       @click="prevTestimonial"
@@ -20,7 +20,7 @@
       >{{ $t("home.depoiments.title") }}</span
     >
 
-    <transition name="fade" mode="out-in">
+    <transition name="fade" mode="out-in" class="">
       <div
         :key="currentIndex"
         class="col-span-3 row-span-5 pt-[5em] text-white flex flex-col h-auto justify-between"
@@ -54,6 +54,51 @@
         alt=""
         class="w-[35em] h-[25em] object-cover col-span-9 row-span-10 rounded overflow-hidden flex items-center justify-center"
       />
+    </div>
+  </div>
+  <div
+    class="sm:hidden flex flex-col gap-4 bg-[#E6007E] p-[7vw] gap-[7vw] relative"
+  >
+    <span
+      class="font-bold text-[40px] text-center text-white"
+      >{{ $t("home.depoiments.title") }}</span
+    >
+
+    <transition name="fade" mode="out-in" class="">
+      <div
+        :key="currentIndex"
+        class="col-span-3 row-span-5 text-white flex flex-col h-auto justify-between"
+      >
+        <div class="h-8"></div>
+        <div class="flex gap-4 pb-[2em]">
+          <div class="rounded overflow-hidden">
+            <img
+              :src="currentTestimonial.picture"
+              alt="Author"
+              class="w-[5em] h-[5em] object-cover"
+            />
+          </div>
+          <div class="flex flex-col justify-end leading-none">
+            <span class="text-[28px]">{{ currentTestimonial.author }}</span>
+            <span class="text-[16px]">{{ currentTestimonial.enterprise }}</span>
+          </div>
+        </div>
+        <span class="text-[15px] w-full">{{ currentTestimonial.content }}</span>
+      </div>
+    </transition>
+    <div class="flex gap-2 justify-end">
+      <div
+        @click="prevTestimonial"
+        class="left-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
+      >
+        <img src="/assets/icons/arrow_circle.png" alt="Previous" />
+      </div>
+      <div
+        @click="nextTestimonial"
+        class="right-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
+      >
+        <img src="/assets/icons/arrow_circle.png" alt="Next" class="rotate-180" />
+      </div>
     </div>
   </div>
 </template>

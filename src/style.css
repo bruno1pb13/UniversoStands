@@ -125,18 +125,6 @@
     --purple: #663399;
 }
 
-@layer utilities {
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-      display: none;
-  }
- /* Hide scrollbar for IE, Edge and Firefox */
-  .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
-}
-}
-
 .pattern {
   background: url('/assets/patteenYellow.png') -75% 0;
   background-repeat: repeat-x;

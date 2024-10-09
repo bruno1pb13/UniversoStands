@@ -25,8 +25,20 @@ export default [
         path: '/sobre',
         name: 'ABOUT',
         component: () => import("../views/About.vue"),
-      }
+      },
     ]
   },
+  {
+    path: '/legal',
+    name: 'Legal',
+    component: () => import("../views/legal/index.vue"),
+    children: [
+      {
+        path: '/legal/politicadeprivacidade',
+        name: 'Politica de privacidade',
+        component: () => import("../views/legal/politicaDePrivacidade.vue"),
+      }
+    ]
+  }
   
 ];

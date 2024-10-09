@@ -60,7 +60,7 @@ export default {
 
 <template>
   <div
-    class="grid grid-cols-5 grid-rows-5 bg-[#663399] p-[7vw] pt-[10em] gap-[7vw] relative"
+    class="hidden sm:grid grid-cols-5 grid-rows-5 bg-[#663399] p-[7vw] pt-[10em] gap-[7vw] relative"
   >
     <div
       @click="prevTestimonial"
@@ -81,43 +81,45 @@ export default {
         class="col-span-3 row-span-5 pt-[3em] text-white flex flex-col h-auto justify-between"
       >
         <div class="flex flex-col gap-12">
-            <div class="flex gap-4">
-              <div class="rounded overflow-hidden">
-                <img
-                  :src="currentTestimonial.picture"
-                  alt="Author"
-                  class="w-[5em] h-[5em] object-cover"
-                />
-              </div>
-              <div class="flex flex-col justify-end leading-none">
-                <span class="text-[28px]">{{ currentTestimonial.author }}</span>
-                <span class="text-[16px]">{{ currentTestimonial.enterprise }}</span>
-              </div>
+          <div class="flex gap-4">
+            <div class="rounded overflow-hidden">
+              <img
+                :src="currentTestimonial.picture"
+                alt="Author"
+                class="w-[5em] h-[5em] object-cover"
+              />
             </div>
-            <div>
-                <span class="text-[20px] w-full min-h-[8em]">{{
-                  currentTestimonial.content
-                }}</span>
+            <div class="flex flex-col justify-end leading-none">
+              <span class="text-[28px]">{{ currentTestimonial.author }}</span>
+              <span class="text-[16px]">{{
+                currentTestimonial.enterprise
+              }}</span>
             </div>
-            <div>
-                <div class="grid grid-cols-2 grid-rows-1 gap-4">
-                  <div class="flex gap-4 items-center">
-                    <div class="w-[10] h-auto">
-                      <img src="/assets/icons/GoldStar.svg" alt="" />
-                    </div>
-                    <span class="text-[#FFD700]">Stand Type</span>
-                  </div>
-                  <div class="flex gap-4 items-center">
-                    <div>
-                      <img src="/assets/icons/gps.png" alt="" />
-                    </div>
-                    <div class="flex flex-col leading-none">
-                      <span class="text-[20px] font-bold">Local</span>
-                      <span class="text-[18px]">Data</span>
-                    </div>
-                  </div>
+          </div>
+          <div>
+            <span class="text-[20px] w-full min-h-[8em]">{{
+              currentTestimonial.content
+            }}</span>
+          </div>
+          <div>
+            <div class="grid grid-cols-2 grid-rows-1 gap-4">
+              <div class="flex gap-4 items-center">
+                <div class="w-[10] h-auto">
+                  <img src="/assets/icons/GoldStar.svg" alt="" />
                 </div>
+                <span class="text-[#FFD700]">Stand Type</span>
+              </div>
+              <div class="flex gap-4 items-center">
+                <div>
+                  <img src="/assets/icons/gps.png" alt="" />
+                </div>
+                <div class="flex flex-col leading-none">
+                  <span class="text-[20px] font-bold">Local</span>
+                  <span class="text-[18px]">Data</span>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </transition>
@@ -125,12 +127,72 @@ export default {
     <div
       class="grid col-span-4 row-span-5 col-start-4 grid-cols-9 grid-rows-10 gap-4 h-auto flex items-center justify-center"
     >
-        <img
-          :src="currentTestimonial.img"
-          alt=""
-          class="w-[35em] h-[25em] object-cover col-span-9 row-span-10 rounded overflow-hidden flex items-center justify-center"
-        />
+      <img
+        :src="currentTestimonial.img"
+        alt=""
+        class="w-[35em] h-[25em] object-cover col-span-9 row-span-10 rounded overflow-hidden flex items-center justify-center"
+      />
     </div>
+  </div>
+  <div
+    class="flex flex-col sm:hidden bg-[#663399] p-[7vw] pt-[5em] sm:pt-[10em] gap-4 sm:gap-[7vw] relative"
+  >
+    <h1 class="font-bold text-[30px] text-center text-[white]">
+      {{ $t("nav.pages.stands") }}
+    </h1>
+    <transition name="fade" mode="out-in">
+      <div
+        :key="currentIndex"
+        class=" text-white flex flex-col h-auto justify-between"
+      >
+        <div class="flex">
+          <div class="flex gap-4 items-center">
+            <div>
+              <img src="/assets/icons/gps.png" alt="" />
+            </div>
+            <div class="flex gap-2 leading-none">
+              <span class="text-[20px] font-bold">Feira xyz</span>
+              <span class="text-[18px]">25 outubro 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </transition>
+
+    <div class="relative h-auto flex items-center justify-center">
+      <img
+        :src="currentTestimonial.img"
+        alt=""
+        class="w-[35em] h-[25em] object-cover rounded overflow-hidden flex items-center justify-center"
+      />
+      <div class="absolute top-2 left-2 flex gap-4">
+        <div class="w-[10] h-auto">
+          <img src="/assets/icons/GoldStar.svg" alt="" />
+        </div>
+        <span class="text-[#FFD700]">Stand cenografico</span>
+      </div>
+    </div>
+    <div class="flex gap-4 justify-center text-[white]">
+      <span class="text-[16px] text-center">{{
+        currentTestimonial.enterprise
+      }}</span>
+    </div>
+    
+    <div class="flex gap-2 justify-end">
+      <div
+        @click="prevTestimonial"
+        class="left-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
+      >
+        <img src="/assets/icons/arrow_circle.png" alt="Previous" />
+      </div>
+      <div
+        @click="nextTestimonial"
+        class="right-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
+      >
+        <img src="/assets/icons/arrow_circle.png" alt="Next" class="rotate-180" />
+      </div>
+    </div>
+
   </div>
 </template>
 

@@ -1,9 +1,10 @@
 <template>
-    <div class="w-full h-[20em] bg-[var(--purple)]">
+    <div class="w-full h-auto sm:h-[20em] bg-[var(--purple)]">
         <div class="flex flex-col justify-between h-full pt-[3em] text-white ">
-            <div class="flex justify-between  px-[7vw]"> 
-                <div>
+            <div class="flex sm:flex-row gap-4 sm:gap-0 flex-col justify-between  px-[7vw]"> 
+                <div class="flex flex-col">
                     <img src="/assets/LogoBranca.png" alt="" class="w-[18em]">
+                    <img src="/assets/sindprom.png" alt="" class="w-[18em]">
                 </div>
                 <div class="flex flex-col">
                     <span>{{$t('footer.phone')}}</span>
@@ -19,14 +20,17 @@
                 <div class="flex flex-col">
                     <span>LGPD</span>
                     <ul>
-                        <li>Política de Privacidade</li>
-                        <li>Política de Segurança da informação</li>
+                        <li>
+                            <a href="/legal/politicadeprivacidade">
+                                Política de Privacidade
+                            </a>
+                        </li>
                         <li>Preferências de Cookies</li>
                     </ul>
                 </div>
                 <div class="flex flex-col">
                     <span>{{$t('footer.social')}}</span>
-                    <div class="flex gap-4 items-center justify-between">
+                    <div class="flex w-[6em] sm:w-full gap-4 items-center justify-between">
                         <div>
                             <img src="/assets/icons/instagram.svg" class="w-[1.5em] invert" alt="">
                         </div>
@@ -39,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center">
+            <div class=" px-[7vw] pt-[2em] sm:pt-0 text-left sm:text-center">
                 R. Schilling, 560 - Vila Leopoldina, São Paulo - SP, 05302-001
             </div>
             <div class="pattern w-full h-[8em]"></div>
