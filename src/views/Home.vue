@@ -20,12 +20,17 @@ export default {
         <div class="bg-[var(--purple)] w-full h-[40vh] sm:h-[80vh] overflow-visible">
             <div class="flex flex-col justify-between h-full">
                 <div id="securityZone" class="pt-[2em] sm:pt-[5em]"></div>
-                <section class="px-[3em] sm:px-[8.5em] py-[5.5em]">
+                <section class="hidden sm:block px-[3em] sm:px-[8.5em] py-[5.5em]">
                     <h1 class="text-[30px] sm:text-[55px] leading-tight text-white font-[700]">
                         {{ $t('home.slogan[0]') }}
                     </h1>
                     <h1 class="text-[30px] sm:text-[55px] leading-tight text-white font-[700]">
                         {{ $t('home.slogan[1]') }}
+                    </h1>
+                </section>
+                <section class="block sm:hidden px-[3em] sm:px-[8.5em] py-[5.5em]">
+                    <h1 class="text-[30px] sm:text-[55px] leading-tight text-white font-[700]">
+                        {{ $t('home.slogan[0]') }} {{ $t('home.slogan[1]') }}
                     </h1>
                 </section>
                 <div class="pattern w-full h-[8em]"></div>
