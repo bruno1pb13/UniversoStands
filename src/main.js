@@ -16,9 +16,7 @@ createApp(App)
       preset: Aura,
       options: {
           prefix: 'p',
-          cssLayer: false,
           darkModeSelector: false || 'none',
-
       }
   }
   })

@@ -63,7 +63,24 @@ export default {
           image: "/assets/fairs/siavs_logo.png",
           name: "SIAVS, Salão internacional de proteína animal",
       }
-    ] 
+    ],
+    responsiveOptions: [
+        {
+          breakpoint: '1024px',
+          numVisible: 4,
+          numScroll: 1
+        },
+        {
+          breakpoint: '768px',
+          numVisible: 2,
+          numScroll: 1
+        },
+        {
+          breakpoint: '560px',
+          numVisible: 1,
+          numScroll: 1
+        }
+      ] 
     }
   },
   components: {
@@ -72,14 +89,12 @@ export default {
   
 }
 </script>
-
 <template>
-  <Carousel :value="fairs" :numVisible="6" :numScroll="1" circular :autoplayInterval="3000">
-    <template #item="slotProps">
-        <div class=" rounded h-[10em] w-[13em] p-4 m-4 flex items-center justify-center">
-            <img :src="slotProps.data.image" alt="" srcset="">
+    <Carousel :value="fairs" :numVisible="6" :numScroll="1" circular :autoplayInterval="3000" :responsiveOptions="responsiveOptions">
+      <template #item="slotProps">
+        <div class="rounded h-[10em] w-[13em] p-4 m-4 flex items-center justify-center">
+          <img :src="slotProps.data.image" alt="" class="max-h-full max-w-full object-contain">
         </div>
-    </template>
-</Carousel>
-
-</template>
+      </template>
+    </Carousel>
+  </template>

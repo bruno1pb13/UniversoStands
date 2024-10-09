@@ -39,7 +39,7 @@ export default {
     </div>
 
     <div  class="flex sm:hidden" >
-        <Carousel :value="partners" :numVisible="3" :numScroll="1" circular :autoplayInterval="3000">
+        <Carousel :value="partners" :numVisible="2" :numScroll="1" circular :autoplayInterval="3000">
             <template #item="slotProps">
                 <div class=" rounded h-[10em] w-[13em] p-4 m-4 flex items-center justify-center">
                     <img :src="slotProps.data.image" alt="" srcset="">

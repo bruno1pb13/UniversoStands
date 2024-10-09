@@ -8,9 +8,11 @@ export default{
 </script>
 
 <template>
-    <section class="h-[30em] mt-[10em] flex flex-col gap-[4em] text-center ">
+    <section class="mt-[5em] sm:mt-[10em] flex flex-col gap-[4em] text-center  ">
         <h1 class="font-bold text-[40px]">{{$t('fairs.title')}}</h1>
         <span class="text-[20px] px-[2em] sm:px-[14em]">{{$t('fairs.description')}}</span>
+    </section>
+    <section>
         <FeirasCarrousel/>
     </section>
     <section class="px-[2em] sm:px-[7em] py-[10em]">
