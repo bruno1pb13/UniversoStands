@@ -37,7 +37,7 @@ export default{
 }
 </script>
 <template>
-    <div class="flex flex-col gap-8 sm:gap-0 sm:flex-row align-center justify-between px-[14vw] text-center mb-[10em] mt-[5em]">
+    <div class="flex flex-col gap-8 sm:gap-0 sm:flex-row align-center justify-between px-[14vw] text-center mb-[5em] sm:mb-[10em] mt-[2em] sm:mt-[5em]">
         <div class="flex flex-col w-full sm:w-[18vw]">
             <span class="font-bold text-[82px]" id="clientes">{{ clientes }}</span>
             <span class="text-[30px]">{{$t('home.metrics.customers_served')}}</span>

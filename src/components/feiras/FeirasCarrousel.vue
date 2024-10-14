@@ -68,7 +68,7 @@ export default {
         {
           breakpoint: '1024px',
           numVisible: 4,
-          numScroll: 1
+          numScroll: 2
         },
         {
           breakpoint: '768px',
@@ -77,8 +77,8 @@ export default {
         },
         {
           breakpoint: '560px',
-          numVisible: 1,
-          numScroll: 1
+          numVisible: 2,
+          numScroll: 1,
         }
       ] 
     }
@@ -90,10 +90,10 @@ export default {
 }
 </script>
 <template>
-    <Carousel :value="fairs" :numVisible="6" :numScroll="1" circular :autoplayInterval="3000" :responsiveOptions="responsiveOptions">
+    <Carousel :value="fairs" :numVisible="6" :numScroll="2" circular :autoplayInterval="3000" :showIndicators="false" :responsiveOptions="responsiveOptions">
       <template #item="slotProps">
-        <div class="rounded h-[10em] w-[13em] p-4 m-4 flex items-center justify-center">
-          <img :src="slotProps.data.image" alt="" class="max-h-full max-w-full object-contain">
+        <div class="rounded h-[10vw] w-[13vh] p-4 m-4 flex items-center justify-center">
+          <img :src="slotProps.data.image" alt="" class="w-full h-auto object-contain">
         </div>
       </template>
     </Carousel>

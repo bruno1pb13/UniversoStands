@@ -11,11 +11,13 @@ export default {
 </script>
 
 <template>
-  <div class="overflow-y-hidden">
+  <div >
     <MainNavBar />
-    <Transition name="fade">
-      <RouterView />
-    </Transition>
+    <router-view v-slot="{ Component }">
+        <transition name="fade">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     <Mainfooter />
   </div>
 </template>

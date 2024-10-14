@@ -9,7 +9,7 @@ export default {
           picture: "/assets/lorem/woman01.webp",
           enterprise: "Rock Innovations",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit dui ut tellus tempor commodo. Sed sodales pharetra semper. Curabitur cursus consequat gravida. Donec vel augue nec neque consectetur tincidunt. Proin ultricies neque non urna mollis, eget lacinia nisl varius. Nullam a nulla pulvinar, rutrum arcu vel, iaculis lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce lacinia varius odio. Vivamus ac commodo mi.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit dui ut tellus tempor commodo. Sed sodales pharetra semper. Curabitur cursus consequat gravida. Donec vel augue nec neque consectetur tincidunt. Proin ultricies neque non urna mollis, eget lacinia nisl varius.",
           img: "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
           standType: "gold",
           locale: "Feira xyz",
@@ -59,50 +59,53 @@ export default {
 </script>
 
 <template>
+
+
+
   <div
-    class="hidden sm:grid grid-cols-5 grid-rows-5 bg-[#663399] p-[7vw] pt-[10em] gap-[7vw] relative"
-  >
-    <div
-      @click="prevTestimonial"
-      class="absolute left-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
-    >
+    class="flex sm:grid grid-cols-5 grid-rows-5 bg-[#663399] px-[7vw] pt-[10em] sm:pt-[15em] pb-[5em] gap-[7vw] relative overflow-hidden max-w-[100vw]">
+    
+    <div @click="prevTestimonial"
+      class="hidden sm:block absolute left-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out">
       <img src="/assets/icons/arrow_circle.png" alt="Previous" />
     </div>
-    <div
-      @click="nextTestimonial"
-      class="absolute right-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
-    >
+    <div @click="nextTestimonial"
+      class="hidden sm:block  absolute right-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out">
       <img src="/assets/icons/arrow_circle.png" alt="Next" class="rotate-180" />
     </div>
 
-    <transition name="fade" mode="out-in">
-      <div
-        :key="currentIndex"
-        class="col-span-3 row-span-5 pt-[3em] text-white flex flex-col h-auto justify-between"
-      >
-        <div class="flex flex-col gap-12">
-          <div class="flex gap-4">
-            <div class="rounded overflow-hidden">
-              <img
-                :src="currentTestimonial.picture"
-                alt="Author"
-                class="w-[5em] h-[5em] object-cover"
-              />
+    <section class="absolute flex items-center justify-center top-[6em] sm:top-[9em] w-full right-0 text-white">
+      <span class="font-bold text-[40px] text-center ">{{ $t("stands.title") }}</span>
+    </section>
+
+    <!-- mobile -->
+    <div class="sm:hidden flex flex-col gap-4">
+      <transition name="fade" mode="out-in">
+        <div :key="currentIndex" class="col-span-3 row-span-5 pt-[3em] text-white flex flex-col h-auto justify-between">
+          <div class="flex flex-col gap-12">
+            <div class="flex gap-4" id="personInfo">
+              <div class="rounded overflow-hidden">
+                <img :src="currentTestimonial.picture" alt="Author" class="w-[3em] h-[3em] object-cover" />
+              </div>
+              <div class="flex flex-col justify-end leading-none">
+                <span class="text-[28px]">{{ currentTestimonial.author }}</span>
+                <span class="text-[16px]">{{
+                  currentTestimonial.enterprise
+                  }}</span>
+              </div>
             </div>
-            <div class="flex flex-col justify-end leading-none">
-              <span class="text-[28px]">{{ currentTestimonial.author }}</span>
-              <span class="text-[16px]">{{
-                currentTestimonial.enterprise
-              }}</span>
+            <div class="flex flex-col-reverse sm:flex-col gap-4">
+              <div id="testmonialContent">
+                <span class="text-[15px] sm:text-[20px] w-full min-h-[8em]">{{
+                  currentTestimonial.content
+                  }}</span>
+              </div>
+              <div id="testmonialPicture" class="block sm:hidden">
+                <img :src="currentTestimonial.img" alt=""
+                  class="w-[35em] h-[15em] object-cover col-span-9 row-span-10 rounded overflow-hidden flex items-center justify-center" />
+              </div>
             </div>
-          </div>
-          <div>
-            <span class="text-[20px] w-full min-h-[8em]">{{
-              currentTestimonial.content
-            }}</span>
-          </div>
-          <div>
-            <div class="grid grid-cols-2 grid-rows-1 gap-4">
+            <div id="standTypeAndLocale" class="grid grid-cols-2 grid-rows-1 gap-4">
               <div class="flex gap-4 items-center">
                 <div class="w-[10] h-auto">
                   <img src="/assets/icons/GoldStar.svg" alt="" />
@@ -121,79 +124,76 @@ export default {
             </div>
           </div>
         </div>
+      </transition>
+      <div class="pt-[2em]">
+        <div class="flex justify-end gap-4">
+          <div @click="prevTestimonial"
+          class=" left-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out">
+          <img src="/assets/icons/arrow_circle.png" alt="Previous" />
+        </div>
+        <div @click="nextTestimonial"
+          class=" right-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out">
+          <img src="/assets/icons/arrow_circle.png" alt="Next" class="rotate-180" />
+        </div>
+        </div>
       </div>
-    </transition>
-
-    <div
-      class="grid col-span-4 row-span-5 col-start-4 grid-cols-9 grid-rows-10 gap-4 h-auto flex items-center justify-center"
-    >
-      <img
-        :src="currentTestimonial.img"
-        alt=""
-        class="w-[35em] h-[25em] object-cover col-span-9 row-span-10 rounded overflow-hidden flex items-center justify-center"
-      />
     </div>
-  </div>
-  <div
-    class="flex flex-col sm:hidden bg-[#663399] p-[7vw] pt-[5em] sm:pt-[10em] gap-4 sm:gap-[7vw] relative"
-  >
-    <h1 class="font-bold text-[30px] text-center text-[white]">
-      {{ $t("nav.pages.stands") }}
-    </h1>
-    <transition name="fade" mode="out-in">
-      <div
-        :key="currentIndex"
-        class=" text-white flex flex-col h-auto justify-between"
-      >
-        <div class="flex">
-          <div class="flex gap-4 items-center">
-            <div>
-              <img src="/assets/icons/gps.png" alt="" />
+
+    <!-- pc -->
+    <transition class="sm:flex hidden" name="fade" mode="out-in">
+      <div :key="currentIndex" class="col-span-3 row-span-5 pt-[3em] text-white flex flex-col h-auto justify-between">
+        <div class="flex flex-col gap-12">
+          <div class="flex gap-4" id="personInfo">
+            <div class="rounded overflow-hidden">
+              <img :src="currentTestimonial.picture" alt="Author" class="w-[5em] h-[5em] object-cover" />
             </div>
-            <div class="flex gap-2 leading-none">
-              <span class="text-[20px] font-bold">Feira xyz</span>
-              <span class="text-[18px]">25 outubro 2025</span>
+            <div class="flex flex-col justify-end leading-none">
+              <span class="text-[28px]">{{ currentTestimonial.author }}</span>
+              <span class="text-[16px]">{{
+                currentTestimonial.enterprise
+                }}</span>
+            </div>
+          </div>
+          <div class="flex flex-col-reverse sm:flex-col gap-4">
+            <div id="testmonialContent">
+              <span class="text-[15px] sm:text-[20px] w-full min-h-[8em]">{{
+                currentTestimonial.content
+                }}</span>
+            </div>
+            <div id="testmonialPicture" class="block sm:hidden">
+              <img :src="currentTestimonial.img" alt=""
+                class="w-[35em] h-[25em] object-cover col-span-9 row-span-10 rounded overflow-hidden flex items-center justify-center" />
+            </div>
+          </div>
+          <div id="standTypeAndLocale" class="grid grid-cols-2 grid-rows-1 gap-4">
+            <div class="flex gap-4 items-center">
+              <div class="w-[10] h-auto">
+                <img src="/assets/icons/GoldStar.svg" alt="" />
+              </div>
+              <span class="text-[#FFD700]">Stand Type</span>
+            </div>
+            <div class="flex gap-4 items-center">
+              <div>
+                <img src="/assets/icons/gps.png" alt="" />
+              </div>
+              <div class="flex flex-col leading-none">
+                <span class="text-[20px] font-bold">Local</span>
+                <span class="text-[18px]">Data</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </transition>
 
-    <div class="relative h-auto flex items-center justify-center">
-      <img
-        :src="currentTestimonial.img"
-        alt=""
-        class="w-[35em] h-[25em] object-cover rounded overflow-hidden flex items-center justify-center"
-      />
-      <div class="absolute top-2 left-2 flex gap-4">
-        <div class="w-[10] h-auto">
-          <img src="/assets/icons/GoldStar.svg" alt="" />
-        </div>
-        <span class="text-[#FFD700]">Stand cenografico</span>
-      </div>
-    </div>
-    <div class="flex gap-4 justify-center text-[white]">
-      <span class="text-[16px] text-center">{{
-        currentTestimonial.enterprise
-      }}</span>
-    </div>
-    
-    <div class="flex gap-2 justify-end">
-      <div
-        @click="prevTestimonial"
-        class="left-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
-      >
-        <img src="/assets/icons/arrow_circle.png" alt="Previous" />
-      </div>
-      <div
-        @click="nextTestimonial"
-        class="right-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
-      >
-        <img src="/assets/icons/arrow_circle.png" alt="Next" class="rotate-180" />
-      </div>
+    <div
+      class="hidden sm:grid col-span-4 row-span-5 col-start-4 grid-cols-9 grid-rows-10 gap-4 h-auto flex items-center justify-center">
+      <img :src="currentTestimonial.img" alt=""
+        class="w-[35em] h-[25em] object-cover col-span-9 row-span-10 rounded overflow-hidden flex items-center justify-center" />
     </div>
 
   </div>
+
 </template>
 
 <style scoped>

@@ -1,6 +1,8 @@
 <script>
+import randomImage from '../../utils/randomImage';
 export default{
     methods: {
+        randomImage,
         goToStands(){
             this.$router.push({name: 'STANDS'})
         }
@@ -21,10 +23,21 @@ export default{
         </div>
 
         <div class="grid col-span-4 row-span-5 col-start-4  grid-cols-9 grid-rows-10 gap-4 h-auto">
-            <div class="col-span-4 row-span-5 bg-[white] rounded">1</div>
-            <div class="col-span-5 row-span-5 col-start-5 bg-[white] rounded">2</div>
-            <div class="col-span-5 row-span-5 row-start-6 bg-[white] rounded">3</div>
-            <div class="col-span-4 row-span-5 col-start-6 row-start-6 bg-[white] rounded">4</div>
+            <div class="col-span-4 row-span-5 bg-[white] rounded overflow-hidden flex items-center justify-start">
+                <img :src="randomImage(1920, 1080)" class="w-full h-full object-cover" alt="">
+            </div>
+            <div class="col-span-5 row-span-5 col-start-5 bg-[white] rounded overflow-hidden flex items-center justify-start">
+                <img :src="randomImage(1920, 1080)" class="w-full h-full object-cover" alt="">
+
+            </div>
+            <div class="col-span-5 row-span-5 row-start-6 bg-[white] rounded overflow-hidden flex items-center justify-start">
+                <img :src="randomImage(1920, 1080)" class="w-full h-full object-cover" alt="">
+
+            </div>
+            <div class="col-span-4 row-span-5 col-start-6 row-start-6 bg-[white] rounded overflow-hidden flex items-center justify-start">
+                <img :src="randomImage(1920, 1080)" class="w-full h-full object-cover" alt="">
+
+            </div>
         </div>
 
     </div>
@@ -36,10 +49,22 @@ export default{
       </div>
 
       <div class="grid col-span-4 row-span-5 col-start-4  grid-cols-9 grid-rows-10 gap-4 h-[20em]">
-          <div class="col-span-4 row-span-5 bg-[white] rounded">1</div>
-          <div class="col-span-5 row-span-5 col-start-5 bg-[white] rounded">2</div>
-          <div class="col-span-5 row-span-5 row-start-6 bg-[white] rounded">3</div>
-          <div class="col-span-4 row-span-5 col-start-6 row-start-6 bg-[white] rounded">4</div>
+          <div class="col-span-4 row-span-5 bg-[white] rounded overflow-hidden flex items-center justify-start">
+            <img :src="randomImage(1920, 1080)" class="w-full h-full object-cover"  alt="">
+
+          </div>
+          <div class="col-span-5 row-span-5 col-start-5 bg-[white] rounded overflow-hidden flex items-center justify-start">
+            <img :src="randomImage(1920, 1080)" class="w-full h-full object-cover"  alt="">
+
+          </div>
+          <div class="col-span-5 row-span-5 row-start-6 bg-[white] rounded overflow-hidden flex items-center justify-start">
+            <img :src="randomImage(1920, 1080)" class="w-full h-full object-cover"  alt="">
+
+          </div>
+          <div class="col-span-4 row-span-5 col-start-6 row-start-6 bg-[white] rounded overflow-hidden flex items-center justify-start">
+            <img :src="randomImage(1920, 1080)" class="w-full h-full object-cover"  alt="">
+
+          </div>
       </div>
 
       <button @click="goToStands()" class="bg-[#663399] w-full text-white h-[60px] rounded-full flex justify-between items-center px-[2em]">

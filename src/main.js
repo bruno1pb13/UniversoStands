@@ -11,13 +11,14 @@ import router from "./router";
 import App from "./App.vue";
 
 createApp(App)
+
   .use(PrimeVue, {
     theme: {
       preset: Aura,
       options: {
           prefix: 'p',
           darkModeSelector: false || 'none',
-      }
+      },
   }
   })
   .use(i18n)

@@ -121,33 +121,24 @@ export default {
 </script>
 
 <template>
-    <drawer v-if="drawerState" @close="()=>this.drawerState = false"/>
+    <drawer :currentPage="currentPage" :visible="drawerState" @hide="() => this.drawerState = false" />
     <nav
-        class="z-[100] absolute top-8 left-1/2 transform -translate-x-1/2 w-[85vw] flex flex-wrap items-center justify-between">
+        class=" max-w-[100vw] z-[100] absolute top-8 left-1/2 transform -translate-x-1/2 w-[85vw] flex flex-wrap items-center justify-between">
+
         <div class="flex items-center justify-start w-[50%] sm:w-auto">
             <img :src="logo" alt="Logo" class="w-[50%] sm:w-40 h-auto" />
         </div>
 
-        <div v-if="currentPage" id="pages"
-            class="hidden sm:flex pill rounded-full overflow-hidden relative mt-4 sm:mt-0">
-            <div class="bg-indicator"></div>
-            <button v-for="page in pages" :key="page.key" :class="['menu-item', { active: currentPage == page.key }]"
-                class="hover:bg-white btn rounded-full px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base"
-                @click="redirectTo(page.key)">
-                {{ page.name }}
-            </button>
-        </div>
-
-        <div class="hidden sm:flex gap-4 mt-4 sm:mt-0">
-            <div class="flex pill rounded-full h-full relative">
+        <div class="hidden lg:flex gap-4 mt-4 sm:mt-0">
+            <div class="flex pill rounded-full relative">
                 <button @click="() => (langModal = !langModal)" class="flex btn items-center justify-center">
                     <img :src="currentFlag" class="w-10 h-auto" />
                 </button>
                 <div id="langSelection" v-if="langModal"
-                    class="absolute w-[17em] bg-[white] top-full left-0 mt-[1em] rounded shadow-2xl flex flex-col p-4">
+                    class="absolute w-[17em] bg-[white] left-0 mt-[5em] rounded shadow-2xl flex flex-col p-4" style="z-index: 10">
                     <span class="text-[20px]">{{ $t("nav.lang.title") }}</span>
                     <div id="divider" class="h-[3px] w-[80%] mx-auto bg-[#E6007E] rounded my-4"></div>
-                    <data value="" class="flex flex-col">
+                    <div class="flex flex-col">
                         <button @click="setLanguageHandler('en_us')" class="flex gap-4 items-center">
                             <section class="w-10 h-auto">
                                 <img src="/assets/flags/en-us.png" alt="" srcset="" />
@@ -160,26 +151,36 @@ export default {
                             </section>
                             <section>{{ $t("nav.lang.pt_br") }}</section>
                         </button>
-                    </data>
+                    </div>
                 </div>
             </div>
             <div class="pill rounded-full px-4">
                 <button class="btn" @click="redirectTo('ABOUT', 'contact')">
-                    Contato
+                    {{$t('nav.contact')}}
                 </button>
             </div>
         </div>
 
-        <div class="block sm:hidden" @click="() => this.drawerState = true">
+        <div class="block lg:hidden" @click="() => this.drawerState = true">
             <img src="/assets/icons/menu.svg">
         </div>
     </nav>
+
+    <div v-if="currentPage" id="pages"
+        class="hidden sm:flex absolute left-1/2 top-8 transform -translate-x-1/2  pill rounded-full overflow-hidden w-[30em] z-[115]">
+        <div class="bg-indicator"></div>
+        <button v-for="page in pages" :key="page.key" :class="['menu-item', { active: currentPage == page.key }]"
+            class="hover:bg-white btn rounded-full px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base"
+            @click="redirectTo(page.key)">
+            {{ page.name }}
+        </button>
+    </div>
+
 </template>
 
-<style scoped>
+<style>
 .pill {
     background-color: var(--pink);
-    position: relative;
 }
 
 .pill .btn {
@@ -207,7 +208,6 @@ export default {
 .activeMobile {
     font-weight: bold;
     border-bottom: 1px solid white;
-
 }
 
 .bg-indicator {

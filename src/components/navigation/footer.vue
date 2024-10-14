@@ -1,10 +1,10 @@
 <template>
     <div class="w-full h-auto sm:h-[20em] bg-[var(--purple)]">
         <div class="flex flex-col justify-between h-full pt-[3em] text-white ">
-            <div class="flex sm:flex-row gap-4 sm:gap-0 flex-col justify-between  px-[7vw]"> 
-                <div class="flex flex-col">
+            <div class="flex sm:flex-row gap-8 sm:gap-0 flex-col justify-between  px-[7vw]"> 
+                <div class="flex flex-col gap-4">
                     <img src="/assets/LogoBranca.png" alt="" class="w-[18em]">
-                    <img src="/assets/sindprom.png" alt="" class="w-[18em]">
+                    <img src="/assets/sindprom.png" alt="" class="w-[10em] bg-[white]">
                 </div>
                 <div class="flex flex-col">
                     <span>{{$t('footer.phone')}}</span>
