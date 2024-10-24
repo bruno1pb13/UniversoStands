@@ -60,9 +60,33 @@ export default {
           name: "Movelsul, Feira de móveis | Brasil",
       },
       {
-          image: "/assets/fairs/siavs_logo.png",
-          name: "SIAVS, Salão internacional de proteína animal",
-      }
+          image: "/assets/fairs/AgresteTex.png",
+          name: "Agreste Tex",
+      },
+      {
+          image: "/assets/fairs/BeautyEstheticShow.png",
+          name: "Beauty & Esthetic Show",
+      },
+      {
+          image: "/assets/fairs/febratexSummit.png",
+          name: "Febratex Summit",
+      },
+      {
+          image: "/assets/fairs/Febratex.png",
+          name: "Febratex",
+      },
+      {
+          image: "/assets/fairs/febraTextil.png",
+          name: "Febra Têxtil",
+      },
+      {
+          image: "/assets/fairs/MaquintexSigns.png",
+          name: "Maquintex Signs Pack&Graph Fortaleza",
+      },
+      {
+          image: "/assets/fairs/tecnotextilBrail.png",
+          name: "Tecnotêxtil Feira Brasil Têxtil",
+      },
     ],
     responsiveOptions: [
         {

@@ -110,27 +110,32 @@ export default {
       currentIndex: 0,
       depoiments: [
         {
-          author: "Débora Stella",
-          picture: "/assets/lorem/woman01.webp",
-          enterprise: "Rock Innovations",
+          author: "Roberta Viena",
+          picture: "/assets/depoiments/roberta.jpg",
+          enterprise: "",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit dui ut tellus tempor commodo. Sed sodales pharetra semper. Curabitur cursus consequat gravida. Donec vel augue nec neque consectetur tincidunt. Proin ultricies neque non urna mollis, eget lacinia nisl varius. Nullam a nulla pulvinar, rutrum arcu vel, iaculis lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce lacinia varius odio. Vivamus ac commodo mi.",
+            "Trabalho com a Universo há um tempo, empresa super competente, com qualidade de produtos, serviços, atendiemnto ao cliente e com muita eficiência operacional. Eloilza sempre muito simpática, paciente e prestativa.",
           img: "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
         },
         {
-          author: "John Doe",
-          picture: "/assets/lorem/man01.png",
-          enterprise: "Tech Solutions",
-          content:
-            "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+          author: "Sabrina Avelar",
+          picture: "/assets/depoiments/sabrina.png",
+          enterprise: "",
+          content: "Profissional excelente! Super indico! Sucesso!",
           img: "/assets/lorem/OIG4.n5.jpeg",
         },
         {
-          author: "Jane Smith",
-          picture: "/assets/lorem/woman02.png",
-          enterprise: "Creative Designs",
-          content:
-            "Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+          author: "Jackson Viapiana",
+          picture: "/assets/depoiments/jack.jpg",
+          enterprise: "KARIKAL",
+          content:"Muito boa.",
+          img: "/assets/lorem/OIG2.jpeg",
+        },
+        {
+          author: "Eduardo Prado",
+          picture: "/assets/depoiments/eduardo.jpg",
+          enterprise: "",
+          content:"Sempre nos atenderam muito bem!",
           img: "/assets/lorem/OIG2.jpeg",
         },
       ],
