@@ -1,22 +1,32 @@
+<script>
+import constants from '../../utils/constants'
+export default {
+    data() {
+        return {
+            contact: constants.contact
+        }
+    }
+}
+</script>
 <template>
     <div class="w-full h-auto sm:h-[20em] bg-[var(--purple)]">
         <div class="flex flex-col justify-between h-full pt-[3em] text-white ">
-            <div class="flex sm:flex-row gap-8 sm:gap-0 flex-col justify-between  px-[7vw]"> 
+            <div class="flex sm:flex-row gap-8 sm:gap-0 flex-col justify-between  px-[7vw]">
                 <div class="flex flex-col gap-4">
                     <img src="/assets/LogoBranca.png" alt="" class="w-[18em]">
                     <img src="/assets/sindprom.png" alt="" class="w-[10em] bg-[white]">
                 </div>
                 <div class="flex flex-col">
-                    <span>{{$t('footer.phone')}}</span>
-                    <span>(11) 9 9999-9999</span>
-                    <span>(11) 9999-9999</span>
+                    <span>{{ $t('footer.phone') }}</span>
+                    <span>{{ contact.phone01 }}</span>
+                    <span>{{ contact.phone02 }}</span>
                 </div>
                 <div class="flex flex-col">
-                    <span>{{$t('footer.mail')}}</span>
-                    <span>universo@universostands.com</span>
-                    <span>universostands@gmail.com</span>
+                    <span>{{ $t('footer.mail') }}</span>
+                    <span>{{ contact.mail01 }}</span>
+                    <span>{{ contact.mail02 }}</span>
                 </div>
-                
+
                 <div class="flex flex-col">
                     <span>LGPD</span>
                     <ul>
@@ -44,7 +54,7 @@
                 </div>
             </div>
             <div class=" px-[7vw] pt-[2em] sm:pt-0 text-left sm:text-center">
-                R. Schilling, 560 - Vila Leopoldina, São Paulo - SP, 05302-001
+                {{ contact.address }}
             </div>
             <div class="pattern w-full h-[8em]"></div>
         </div>

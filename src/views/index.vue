@@ -23,7 +23,7 @@ export default {
       target="_blank" 
       class="p-4 rounded-full shadow-lg "
     >
-    <img src="/assets/wp.webp" class="w-[10em] h-auto hover:scale-110 easy-in-out duration-100">
+    <img src="/assets/wp.webp" class="w-[5em] sm:w-[8em] h-auto hover:scale-110 easy-in-out duration-100">
     </a>
   </div>
 

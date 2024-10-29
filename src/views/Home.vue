@@ -46,7 +46,7 @@ export default {
         <serviceMetricsSection />
         <portfolioSection />
 
-        <div class="flex flex-col pt-[7vh] sm:pt-[14vh] pb-[10vh] sm:pb-[20vh] gap-[7vw]">
+        <div class="flex flex-col pt-[7vh] sm:pt-[6vh] pb-[7vh] sm:pb-[15vh] gap-[7vw]">
             <span class="text-center text-[40px] font-bold">{{$t('home.partners')}} </span>
             <div>
                 <partnersCarrousel />
