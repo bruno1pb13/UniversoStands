@@ -10,114 +10,120 @@ export default {
             activeGallery: undefined,
             scenographicImages: [
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=1',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=1',
-                    alt: 'Imagem 1',
+                    itemImageSrc: 'assets/stands/cenografico/graniAmici.jpeg',
+                    thumbnailImageSrc: 'assets/stands/cenografico/graniAmici.jpeg',
+                    alt: 'Grani Amici',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=2',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=2',
-                    alt: 'Imagem 2',
+                    itemImageSrc: 'assets/stands/cenografico/origetec01.JPG',
+                    thumbnailImageSrc: 'assets/stands/cenografico/origetec01.JPG',
+                    alt: 'Origetec',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=3',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=3',
-                    alt: 'Imagem 3',
+                    itemImageSrc: 'assets/stands/cenografico/origetec02.JPG',
+                    thumbnailImageSrc: 'assets/stands/cenografico/origetec02.JPG',
+                    alt: 'Origetec',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=4',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=4',
-                    alt: 'Imagem 4',
+                    itemImageSrc: 'assets/stands/cenografico/origetec03.JPG',
+                    thumbnailImageSrc: 'assets/stands/cenografico/origetec03.JPG',
+                    alt: 'Origetec',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=5',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=5',
-                    alt: 'Imagem 5',
+                    itemImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao01.jpg',
+                    thumbnailImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao01.jpg',
+                    alt: 'Porcelana Monte Sião',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=6',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=6',
-                    alt: 'Imagem 6',
+                    itemImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao02.jpg',
+                    thumbnailImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao02.jpg',
+                    alt: 'Porcelana Monte Sião',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=7',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=7',
-                    alt: 'Imagem 7',
-                }
+                    itemImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao03.jpg',
+                    thumbnailImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao03.jpg',
+                    alt: 'Porcelana Monte Sião',
+                },
             ],
             mistImages: [
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=11',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=11',
-                    alt: 'Imagem 11',
+                    itemImageSrc: 'assets/stands/misto/evastec01.JPG',
+                    thumbnailImageSrc: 'assets/stands/misto/evastec01.JPG',
+                    alt: 'Evastec',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=21',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=21',
-                    alt: 'Imagem 21',
+                    itemImageSrc: 'assets/stands/misto/evastec02.JPG',
+                    thumbnailImageSrc: 'assets/stands/misto/evastec02.JPG',
+                    alt: 'Evastec',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=31',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=31',
-                    alt: 'Imagem 31',
+                    itemImageSrc: 'assets/stands/misto/fhon01.jpeg',
+                    thumbnailImageSrc: 'assets/stands/misto/fhon01.jpeg',
+                    alt: 'Fhon',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=41',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=41',
-                    alt: 'Imagem 41',
+                    itemImageSrc: 'assets/stands/misto/fhon02.jpeg',
+                    thumbnailImageSrc: 'assets/stands/misto/fhon02.jpeg',
+                    alt: 'Fhon',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=51',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=51',
-                    alt: 'Imagem 51',
+                    itemImageSrc: 'assets/stands/misto/geave01.jpeg',
+                    thumbnailImageSrc: 'assets/stands/misto/geave01.jpeg',
+                    alt: 'Geave',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=61',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=61',
-                    alt: 'Imagem 61',
+                    itemImageSrc: 'assets/stands/misto/fhon01.jpeg',
+                    thumbnailImageSrc: 'assets/stands/misto/fhon01.jpeg',
+                    alt: 'Geave',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=71',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=71',
-                    alt: 'Imagem 71',
-                }
+                    itemImageSrc: 'assets/stands/misto/fhon02.jpeg',
+                    thumbnailImageSrc: 'assets/stands/misto/fhon02.jpeg',
+                    alt: 'Fhon',
+                },
             ],
             basicImages: [
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=12',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=12',
-                    alt: 'Imagem 12',
+                    itemImageSrc: 'assets/stands/basico/agrologic01.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/agrologic01.JPG',
+                    alt: 'Agrologic',
+                },
+
+                {
+                    itemImageSrc: 'assets/stands/basico/genco01.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/genco01.JPG',
+                    alt: 'Genco',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=22',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=22',
-                    alt: 'Imagem 22',
+                    itemImageSrc: 'assets/stands/basico/brave01.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/brave01.JPG',
+                    alt: 'Brave Asset',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=32',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=32',
-                    alt: 'Imagem 32',
+                    itemImageSrc: 'assets/stands/basico/brave02.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/brave02.JPG',
+                    alt: 'Brave Asset',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=42',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=42',
-                    alt: 'Imagem 42',
+                    itemImageSrc: 'assets/stands/basico/brave03.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/brave03.JPG',
+                    alt: 'Brave Asset',
                 },
                 {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=52',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=52',
-                    alt: 'Imagem 52',
+                    itemImageSrc: 'assets/stands/basico/vemax01.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/vemax01.JPG',
+                    alt: 'Vemax',
+                },
+                {
+                    itemImageSrc: 'assets/stands/basico/genco02.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/genco02.JPG',
+                    alt: 'Genco',
                 },
                 {
                     itemImageSrc: 'https://picsum.photos/1920/1080?anticache=62',
                     thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=62',
                     alt: 'Imagem 62',
                 },
-                {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=72',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=72',
-                    alt: 'Imagem 72',
-                }
             ],
             isMobile: useMediaQuery(),
             responsiveOptions: [
@@ -253,13 +259,13 @@ export default {
             <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.basic.description') }}</span>
 
             <div>
-                <div class="grid grid-cols-12 grid-rows-12 gap-4 h-[30em] sm:h-[60em]">
+                <div class="grid grid-cols-12 grid-rows-13 gap-4 h-[30em] sm:h-[60em]">
                     <div @click="openGallery('basicImages', 0)"
                         class="bg-gray-700 rounded col-span-4 row-span-8 overflow-hidden">
                         <img :src="basicImages[0].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('basicImages', 1)"
-                        class="bg-gray-700 rounded col-span-4 row-span-4 col-start-1 row-start-9 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-4 row-span-5 col-start-1 row-start-9 overflow-hidden">
                         <img :src="basicImages[1].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('basicImages', 2)"
@@ -279,7 +285,7 @@ export default {
                         <img :src="basicImages[5].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('basicImages', 6)"
-                        class="bg-gray-700 rounded col-span-8 row-span-4 col-start-5 row-start-9 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-8 row-span-5 col-start-5 row-start-9 overflow-hidden">
                         <img :src="basicImages[6].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                 </div>
