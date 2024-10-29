@@ -14,7 +14,7 @@ function contact(){
     const mail02 = "universostands@gmail.com"
     const address01 = "Schilling, 576, Conj 607s"
     const address02 = "Vila Leopoldina São Paulo/SP"
-    return { phone01, phone02, mail01, mail02, address01, address02, googleMapsEmbedUrl}
+    return { phone01, phone02, mail01, mail02, address01, address02}
 }
 
 const constants = {
