@@ -72,9 +72,9 @@ export default {
                     alt: 'Geave',
                 },
                 {
-                    itemImageSrc: 'assets/stands/misto/fhon01.jpeg',
-                    thumbnailImageSrc: 'assets/stands/misto/fhon01.jpeg',
-                    alt: 'Geave',
+                    itemImageSrc: 'assets/stands/misto/eccho01.png',
+                    thumbnailImageSrc: 'assets/stands/misto/eccho01.png',
+                    alt: 'Eccho',
                 },
                 {
                     itemImageSrc: 'assets/stands/misto/fhon02.jpeg',
@@ -91,8 +91,8 @@ export default {
                     alt: 'Brave Asset',
                 },
                 {
-                    itemImageSrc: 'assets/stands/basico/brave01.JPG',
-                    thumbnailImageSrc: 'assets/stands/basico/brave01.JPG',
+                    itemImageSrc: 'assets/stands/basico/genco01.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/genco01.JPG',
                     alt: 'Brave Asset',
                 },
                 {
@@ -120,11 +120,6 @@ export default {
                     itemImageSrc: 'assets/stands/basico/genco02.JPG',
                     thumbnailImageSrc: 'assets/stands/basico/genco02.JPG',
                     alt: 'Genco',
-                },
-                {
-                    itemImageSrc: 'https://picsum.photos/1920/1080?anticache=62',
-                    thumbnailImageSrc: 'https://picsum.photos/1920/1080?anticache=62',
-                    alt: 'Imagem 62',
                 },
             ],
             isMobile: useMediaQuery(),
