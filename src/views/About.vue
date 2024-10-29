@@ -12,11 +12,11 @@ export default {
 
 <template>
     <section class=" pt-[7em] flex flex-col items-center ">
-        <div class="flex flex-col sm:flex-row items-center justify-between px-[2em] sm:px-[7em] ">
-            <div class="w-full sm:w-[50%] ">
+        <div class="flex flex-col sm:flex-row items-center justify-between px-[2em] sm:px-[7em] w-full">
+            <div class="w-full ">
                 <span class="text-[30px] sm:text-[45px] font-light italic" style="font-weight:200"> {{$t('about.title')}}</span>
             </div>
-            <div class="w-full w-[50%] ">
+            <div class="w-full  ">
                 <img src="/assets/lorem/equip.png" alt="">
             </div>
         </div>
@@ -24,15 +24,15 @@ export default {
     </section>
     <section class="px-[2em] sm:px-[7em] pt-[4em] flex flex-col gap-[4em]">
         <div class="flex flex-col">
-            <span class="font-bold text-[25px] sm:text-[30px]">{{$t('about.mission.title')}}</span>
-            <span class="text-[15px] sm:text-[30px]">{{$t('about.mission.description')}}</span>
+            <span class="font-bold text-[25px] sm:text-[25px]">{{$t('about.mission.title')}}</span>
+            <span class="text-[15px] sm:text-[20px]">{{$t('about.mission.description')}}</span>
         </div>
         <div class="flex flex-col">
-            <span class="font-bold text-[25px] sm:text-[30px]">{{$t('about.vision.title')}}</span>
-            <span class="text-[15px] sm:text-[30px]">{{$t('about.vision.description')}}</span>
+            <span class="font-bold text-[25px] sm:text-[25px]">{{$t('about.vision.title')}}</span>
+            <span class="text-[15px] sm:text-[20px]">{{$t('about.vision.description')}}</span>
         </div>
         <div class="flex flex-col">
-            <span class="font-bold text-[25px] sm:text-[30px]">{{$t('about.values.title')}}</span>
+            <span class="font-bold text-[25px] sm:text-[25px]">{{$t('about.values.title')}}</span>
             <ul class="flex flex-col gap-2">
                 <li>
                     <span class="font-bold">{{$t('about.values.safety.title')}}</span>
@@ -54,7 +54,7 @@ export default {
         </div>
     </section>
     <section class="hidden sm:block" id="contact">
-        <div class="grid grid-cols-8 grid-rows-4 p-[7vw]">
+        <div class="grid grid-cols-8 grid-rows-4 py-[7vw] px-[7em]">
             <div class="col-span-7 row-span-1 ">
                 <div class="flex flex-col gap-4">
                     <span class="font-bold text-[20px] sm:text-[30px]">{{$t('about.contact.title')}}</span>
