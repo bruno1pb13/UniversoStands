@@ -40,8 +40,8 @@ export default {
                     alt: 'Porcelana Monte Sião',
                 },
                 {
-                    itemImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao03.jpg',
-                    thumbnailImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao03.jpg',
+                    itemImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao00.mp4',
+                    thumbnailImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao00.mp4',
                     alt: 'Porcelana Monte Sião',
                 },
             ],
@@ -83,16 +83,12 @@ export default {
                 },
             ],
             basicImages: [
-                {
-                    itemImageSrc: 'assets/stands/basico/agrologic01.JPG',
-                    thumbnailImageSrc: 'assets/stands/basico/agrologic01.JPG',
-                    alt: 'Agrologic',
-                },
+                
 
-                {
-                    itemImageSrc: 'assets/stands/basico/genco01.JPG',
-                    thumbnailImageSrc: 'assets/stands/basico/genco01.JPG',
-                    alt: 'Genco',
+            {
+                    itemImageSrc: 'assets/stands/basico/brave00.mp4',
+                    thumbnailImageSrc: 'assets/stands/basico/brave00.mp4',
+                    alt: 'Brave Asset',
                 },
                 {
                     itemImageSrc: 'assets/stands/basico/brave01.JPG',
@@ -105,10 +101,16 @@ export default {
                     alt: 'Brave Asset',
                 },
                 {
+                    itemImageSrc: 'assets/stands/basico/agrologic01.JPG',
+                    thumbnailImageSrc: 'assets/stands/basico/agrologic01.JPG',
+                    alt: 'Agrologic',
+                },
+                {
                     itemImageSrc: 'assets/stands/basico/brave03.JPG',
                     thumbnailImageSrc: 'assets/stands/basico/brave03.JPG',
                     alt: 'Brave Asset',
                 },
+               
                 {
                     itemImageSrc: 'assets/stands/basico/vemax01.JPG',
                     thumbnailImageSrc: 'assets/stands/basico/vemax01.JPG',
@@ -196,24 +198,23 @@ export default {
                         <img :src="scenographicImages[1].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('scenographicImages', 2)"
-                        class="bg-gray-700 rounded col-span-3 row-span-3 row-start-5 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-5 row-span-6 row-start-5 overflow-hidden">
                         <img :src="scenographicImages[2].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
-                    <div @click="openGallery('scenographicImages', 3)"
-                        class="bg-gray-700 rounded col-span-3 row-span-3 col-start-1 row-start-8 overflow-hidden">
-                        <img :src="scenographicImages[3].itemImageSrc" class="w-full  h-full object-cover" />
-                    </div>
                     <div @click="openGallery('scenographicImages', 4)"
-                        class="bg-gray-700 rounded col-span-3 row-span-3 col-start-4 row-start-5 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-5 row-span-3 col-start-6 row-start-5 overflow-hidden">
                         <img :src="scenographicImages[4].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('scenographicImages', 5)"
-                        class="bg-gray-700 rounded col-span-3 row-span-3 col-start-4 row-start-8 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-5 row-span-3 col-start-6 row-start-8 overflow-hidden">
                         <img :src="scenographicImages[5].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
-                    <div @click="openGallery('scenographicImages', 6)"
-                        class="bg-gray-700 rounded col-span-6 row-span-6 col-start-7 row-start-5 overflow-hidden">
-                        <img :src="scenographicImages[6].itemImageSrc" class="w-full  h-full object-cover" />
+                    <div
+                        class="bg-gray-700 rounded col-span-2 row-span-6 col-start-11 row-start-5 overflow-hidden">
+                        <video class="w-full h-full object-cover responsive-video" controls autoplay muted>
+                            <source :src="scenographicImages[6].itemImageSrc" type="video/mp4" />
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -261,25 +262,25 @@ export default {
             <div>
                 <div class="grid grid-cols-12 grid-rows-13 gap-4 h-[30em] sm:h-[60em]">
                     <div @click="openGallery('basicImages', 0)"
-                        class="bg-gray-700 rounded col-span-4 row-span-8 overflow-hidden">
-                        <img :src="basicImages[0].itemImageSrc" class="w-full  h-full object-cover" />
+                        class="bg-gray-700 rounded col-span-2 row-span-8 overflow-hidden">
+                        <video class="w-full h-full object-cover responsive-video" controls autoplay muted>
+                            <source :src="scenographicImages[6].itemImageSrc" type="video/mp4" />
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
                     </div>
                     <div @click="openGallery('basicImages', 1)"
                         class="bg-gray-700 rounded col-span-4 row-span-5 col-start-1 row-start-9 overflow-hidden">
                         <img :src="basicImages[1].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('basicImages', 2)"
-                        class="bg-gray-700 rounded col-span-4 row-span-4 col-start-5 row-start-1 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-6 row-span-8 col-start-3 row-start-1 overflow-hidden">
                         <img :src="basicImages[2].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('basicImages', 3)"
                         class="bg-gray-700 rounded col-span-4 row-span-4 col-start-9 row-start-1 overflow-hidden">
                         <img :src="basicImages[3].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
-                    <div @click="openGallery('basicImages', 4)"
-                        class="bg-gray-700 rounded col-span-4 row-span-4 col-start-5 row-start-5 overflow-hidden">
-                        <img :src="basicImages[4].itemImageSrc" class="w-full  h-full object-cover" />
-                    </div>
+
                     <div @click="openGallery('basicImages', 5)"
                         class="bg-gray-700 rounded col-span-4 row-span-4 col-start-9 row-start-5 overflow-hidden">
                         <img :src="basicImages[5].itemImageSrc" class="w-full  h-full object-cover" />
@@ -293,3 +294,11 @@ export default {
         </section>
     </section>
 </template>
+<style>
+.responsive-video {
+    width: auto;
+    height: 100%;
+    aspect-ratio: 9/16; /* Ajuste conforme necessário */
+    object-fit: cover; /* Opcional: para preencher o contêiner */
+}
+</style>
