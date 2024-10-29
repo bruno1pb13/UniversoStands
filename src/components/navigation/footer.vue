@@ -54,7 +54,8 @@ export default {
                 </div>
             </div>
             <div class=" px-[7vw] pt-[2em] sm:pt-0 text-left sm:text-center">
-                {{ contact.address }}
+                {{ contact.address01 }},
+                {{ contact.address02 }} 
             </div>
             <div class="pattern w-full h-[8em]"></div>
         </div>

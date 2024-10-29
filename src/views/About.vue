@@ -1,6 +1,18 @@
+
+<script>
+import constants from '../../utils/constants'
+export default {
+    data() {
+        return {
+            contact: constants.contact
+        }
+    }
+}
+</script>
+
 <template>
     <section class=" pt-[7em] flex flex-col items-center ">
-        <div class="flex flex-col sm:flex-row items-center px-[2em] sm:px-[7em] ">
+        <div class="flex flex-col sm:flex-row items-center justify-between px-[2em] sm:px-[7em] ">
             <div class="w-full sm:w-[50%] ">
                 <span class="text-[30px] sm:text-[45px] font-light italic" style="font-weight:200"> {{$t('about.title')}}</span>
             </div>
@@ -86,15 +98,15 @@
                 <div class="flex gap-4">
                     <div class="flex flex-col leading-tight">
                         <span class="text-[15px] font-bold">{{$t('about.contact.phone')}}</span>
-                        <span class="text-[15px]">+55 31 99999-9999</span>
+                        <span class="text-[15px]">{{ contact.phone01 }}</span>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <div>
                         <span class="text-[15px] font-bold">{{$t('about.contact.address')}}</span>
                         <div class=" text-[15px] flex flex-col leading-tight">
-                            <span>Schilling, 576, Conj 607, </span>
-                            <span>Vila Leopoldina São Paulo/SP </span>
+                            <span>{{ contact.address01 }},</span>
+                            <span>{{ contact.address02 }}</span>
                         </div>
                     </div>
                 </div>
@@ -154,15 +166,15 @@
                 <div class="flex gap-4">
                     <div class="flex flex-col leading-tight">
                         <span class="text-[15px] font-bold">{{$t('about.contact.phone')}}</span>
-                        <span class="text-[15px]">+55 31 99999-9999</span>
+                        <span class="text-[15px]">{{ contact.phone01 }}</span>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <div>
                         <span class="text-[15px] font-bold">{{$t('about.contact.address')}}</span>
                         <div class=" text-[15px] flex flex-col leading-tight">
-                            <span>Schilling, 576, Conj 607, </span>
-                            <span>Vila Leopoldina São Paulo/SP </span>
+                            <span>{{ contact.address01 }},</span>
+                            <span>{{ contact.address02 }}</span>
                         </div>
                     </div>
                 </div>
