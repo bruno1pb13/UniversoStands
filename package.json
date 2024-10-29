@@ -24,6 +24,7 @@
     "leaflet": "^1.9.4",
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.11",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-squoosh": "^1.1.7"
   }
 }
