@@ -275,7 +275,6 @@ export default {
                         class="bg-gray-700 rounded col-span-4 row-span-4 col-start-9 row-start-1 overflow-hidden">
                         <img :src="basicImages[3].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
-
                     <div @click="openGallery('basicImages', 5)"
                         class="bg-gray-700 rounded col-span-4 row-span-4 col-start-9 row-start-5 overflow-hidden">
                         <img :src="basicImages[5].itemImageSrc" class="w-full  h-full object-cover" />
