@@ -256,10 +256,10 @@ export default {
 
             <div>
                 <div class="grid grid-cols-12 grid-rows-13 gap-4 h-[30em] sm:h-[60em]">
-                    <div @click="openGallery('basicImages', 0)"
+                    <div
                         class="bg-gray-700 rounded col-span-2 row-span-8 overflow-hidden">
                         <video class="w-full h-full object-cover responsive-video" controls autoplay muted>
-                            <source :src="scenographicImages[6].itemImageSrc" type="video/mp4" />
+                            <source :src="basicImages[0].itemImageSrc" type="video/mp4" />
                             Seu navegador não suporta o elemento de vídeo.
                         </video>
                     </div>
