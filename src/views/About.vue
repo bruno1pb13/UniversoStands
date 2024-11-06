@@ -64,48 +64,55 @@ export default {
             <div class=" col-span-4 row-span-3 col-start-1 row-start-2 flex flex-col gap-[2em] ">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px] font-bold">{{$t('about.contact.directory')}}</span>
+                        <span class="text-[15px]">Eloilza Goulart </span>
+                        <span class="text-[15px]"><a href="mailto:eloilza.goulart@us-brasil.com">eloilza.goulart@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px] font-bold">{{$t('about.contact.management')}}</span>
+                        <span class="text-[15px]">Greici Goulart </span>
+                        <span class="text-[15px]"><a href="mailto:greici.goulart@us-brasil.com">greici.goulart@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.administrative')}}</span>
-                        <span class="text-[15px]">Eloilza Goulart </span>
-                        <span class="text-[15px]"><a href="mailto:adm@usbrasil.com">adm@usbrasil.com</a></span>
-                    </div>
-                    <div class="flex flex-col leading-tight ">
-                        <span class="text-[15px] font-bold">{{$t('about.contact.sales_manager')}}</span>
-                        <span class="text-[15px]">Eloilza Goulart </span>
-                        <span class="text-[15px]"><a href="mailto:eloilza@usbrasil.com">eloilza@usbrasil.com</a></span>
-                    </div>
-                    <div class="flex flex-col leading-tight ">
-                        <span class="text-[15px] font-bold">{{$t('about.contact.sales_team')}}</span>
-                        <span class="text-[15px]">Barbara Nathielly</span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
-                    </div>
-                    <div class="flex flex-col leading-tight ">
-                        <span class="text-[15px]">Lucas Gonçalves </span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
-                    </div>
-                    <div class="flex flex-col leading-tight ">
                         <span class="text-[15px]">Tamara Diniz</span>
                         <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
-                        <span class="text-[15px]">Thiago Padilha</span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
+                        <span class="text-[15px] font-bold">{{$t('about.contact.sales_manager')}}</span>
+                        <span class="text-[15px]">Thiago Padilha </span>
+                        <span class="text-[15px]"><a href="mailto:thiago.padilha@us-brasil.com">thiago.padilha@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px] font-bold">{{$t('about.contact.sales_team')}}</span>
+                        <span class="text-[15px]">Barbara Nathielly</span>
+                        <span class="text-[15px]"><a href="mailto:barbara@us-brasil.com">barbara@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px]">Lucas Gonçalves </span>
+                        <span class="text-[15px]"><a href="mailto:lucas@us-brasil.com">lucas@us-brasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px]">Patrícia Fritz</span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
+                        <span class="text-[15px]"><a href="mailto:patricia@us-brasil.com">patricia@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px]">Regiane Santos</span>
+                        <span class="text-[15px]"><a href="mailto:regiane@us-brasil.com">regiane@us-brasil.com</a></span>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <div class="flex flex-col leading-tight">
                         <span class="text-[15px] font-bold">{{$t('about.contact.phone')}}</span>
-                        <span class="text-[15px]">{{ contact.phone01 }}</span>
+                        <a :href="'tel:'+contact.phone01raw" class="text-[15px]">{{ contact.phone01 }}</a>
+                        <a :href="'tel:'+contact.phone02raw" class="text-[15px]">{{ contact.phone02 }}</a>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <div>
                         <span class="text-[15px] font-bold">{{$t('about.contact.address')}}</span>
                         <div class=" text-[15px] flex flex-col leading-tight">
-                            <span>{{ contact.address01 }},</span>
+                            <span>{{ contact.address01 }}</span>
                             <span>{{ contact.address02 }}</span>
                         </div>
                     </div>
@@ -132,48 +139,55 @@ export default {
             <div class="  flex flex-col gap-[2em] pt-4">
                 <div class="flex flex-col gap-4">
                     <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px] font-bold">{{$t('about.contact.directory')}}</span>
+                        <span class="text-[15px]">Eloilza Goulart </span>
+                        <span class="text-[15px]"><a href="mailto:eloilza.goulart@us-brasil.com">eloilza.goulart@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px] font-bold">{{$t('about.contact.management')}}</span>
+                        <span class="text-[15px]">Greici Goulart </span>
+                        <span class="text-[15px]"><a href="mailto:greici.goulart@us-brasil.com">greici.goulart@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.administrative')}}</span>
-                        <span class="text-[15px]">Eloilza Goulart </span>
-                        <span class="text-[15px]"><a href="mailto:adm@usbrasil.com">adm@usbrasil.com</a></span>
-                    </div>
-                    <div class="flex flex-col leading-tight ">
-                        <span class="text-[15px] font-bold">{{$t('about.contact.sales_manager')}}</span>
-                        <span class="text-[15px]">Eloilza Goulart </span>
-                        <span class="text-[15px]"><a href="mailto:eloilza@usbrasil.com">eloilza@usbrasil.com</a></span>
-                    </div>
-                    <div class="flex flex-col leading-tight ">
-                        <span class="text-[15px] font-bold">{{$t('about.contact.sales_team')}}</span>
-                        <span class="text-[15px]">Barbara Nathielly</span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
-                    </div>
-                    <div class="flex flex-col leading-tight ">
-                        <span class="text-[15px]">Lucas Gonçalves </span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
-                    </div>
-                    <div class="flex flex-col leading-tight ">
                         <span class="text-[15px]">Tamara Diniz</span>
                         <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
-                        <span class="text-[15px]">Thiago Padilha</span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
+                        <span class="text-[15px] font-bold">{{$t('about.contact.sales_manager')}}</span>
+                        <span class="text-[15px]">Thiago Padilha </span>
+                        <span class="text-[15px]"><a href="mailto:thiago.padilha@us-brasil.com">thiago.padilha@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px] font-bold">{{$t('about.contact.sales_team')}}</span>
+                        <span class="text-[15px]">Barbara Nathielly</span>
+                        <span class="text-[15px]"><a href="mailto:barbara@us-brasil.com">barbara@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px]">Lucas Gonçalves </span>
+                        <span class="text-[15px]"><a href="mailto:lucas@us-brasil.com">lucas@us-brasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px]">Patrícia Fritz</span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
+                        <span class="text-[15px]"><a href="mailto:patricia@us-brasil.com">patricia@us-brasil.com</a></span>
+                    </div>
+                    <div class="flex flex-col leading-tight ">
+                        <span class="text-[15px]">Regiane Santos</span>
+                        <span class="text-[15px]"><a href="mailto:regiane@us-brasil.com">regiane@us-brasil.com</a></span>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <div class="flex flex-col leading-tight">
                         <span class="text-[15px] font-bold">{{$t('about.contact.phone')}}</span>
-                        <span class="text-[15px]">{{ contact.phone01 }}</span>
+                        <a :href="'tel:'+contact.phone01raw" class="text-[15px]">{{ contact.phone01 }}</a>
+                        <a :href="'tel:'+contact.phone02raw" class="text-[15px]">{{ contact.phone02 }}</a>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <div>
                         <span class="text-[15px] font-bold">{{$t('about.contact.address')}}</span>
                         <div class=" text-[15px] flex flex-col leading-tight">
-                            <span>{{ contact.address01 }},</span>
+                            <span>{{ contact.address01 }}</span>
                             <span>{{ contact.address02 }}</span>
                         </div>
                     </div>

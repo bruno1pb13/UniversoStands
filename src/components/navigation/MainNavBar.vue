@@ -47,9 +47,9 @@ export default {
             setTimeout(() => {
                 this.updateIndicator();
                 if (["FEIRAS", "ABOUT"].includes(this.currentPage)) {
-                    this.logo = "/assets/LogoRosa.png";
+                    this.logo = "/assets/LogoBrancaRosa.png";
                 } else {
-                    this.logo = "/assets/LogoBranca.png";
+                    this.logo = "/assets/LogoBrancaRosa.png";
                 }
             }, 100);
         });
@@ -126,7 +126,7 @@ export default {
         class=" max-w-[100vw] z-[100] absolute top-8 left-1/2 transform -translate-x-1/2 w-[85vw] flex flex-wrap items-center justify-between">
 
         <div class="flex items-center justify-start w-[50%] sm:w-auto">
-            <img :src="logo" alt="Logo" class="w-[50%] sm:w-40 h-auto" />
+            <img :src="logo" alt="Logo" class="w-[50%] sm:w-40 h-auto rounded" />
         </div>
 
         <div class="hidden lg:flex gap-4 mt-4 sm:mt-0">

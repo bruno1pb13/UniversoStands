@@ -24,7 +24,8 @@
         "metrics": {
             "customers_served" : "Clientes Atendidos",
             "mounted_fairs" : "Feiras Montadas",
-            "m_Built" : "M² Construídos"
+            "m_Built" : "M² Construídos",
+            "m_Built_thousand": "mil"
         },
         "portfolio": {
             "title" : "Vejá nosso portifólio",
@@ -37,7 +38,12 @@
         },
         "callUs": {
             "title" : "Fale conosco",
-            "subtitle" : "Nosso time está aqui para ajudar"
+            "subtitle" : "Nosso time está aqui para ajudar",
+            "contact": {
+                "phone": "Telefone / Whatsapp",
+                "address": "Endereço",
+                "mail": "Email"
+            }
         }
     },
     "fairs": {
@@ -91,6 +97,8 @@
         "contact": {
             "title" : "Entre em contato com nosso time de vendas:",
             "description": "Nossa equipe é formada por profissionais de todas as áreas, desde arquitetos, projetistas, finanças, marceneiros, eletricistas. Enfim, tudo para que você tenha a melhor experiencia no seu evento.",
+            "directory": "Diretora",
+            "management": "Gestão",
             "administrative": "Administrativo",
             "sales_manager": "Gerente de vendas",
             "sales_team": "Time de vendas",

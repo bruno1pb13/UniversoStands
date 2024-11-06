@@ -52,7 +52,7 @@ export default {
                     <img src="/assets/icons/mail.png" alt="" class="w-[2em]">
                 </div>
                 <div class="flex flex-col leading-tight ">
-                    <span class="text-[15px] font-bold">Email</span>
+                    <span class="text-[15px] font-bold">{{$t('home.callUs.contact.mail')}}</span>
                     <span class="text-[15px]">{{contact.mail01}}</span>
                 </div>
             </div>
@@ -61,7 +61,7 @@ export default {
                     <img src="/assets/icons/location.png" alt="" class="w-[2em]">
                 </div>
                 <div>
-                    <span class="text-[15px] font-bold">Endereço</span>
+                    <span class="text-[15px] font-bold">{{$t('home.callUs.contact.address')}}</span>
                     <div class=" text-[15px] flex flex-col leading-tight">
                         <span>{{ contact.address01 }} </span>
                         <span>{{ contact.address02 }} </span>
@@ -73,7 +73,7 @@ export default {
                     <img src="/assets/icons/phone.png" alt="" class="w-[2em]">
                 </div>
                 <div class="flex flex-col leading-tight">
-                    <span class="text-[15px] font-bold">Telefone / Whatsapp</span>
+                    <span class="text-[15px] font-bold">{{$t('home.callUs.contact.phone')}}</span>
                     <span class="text-[15px]">{{contact.phone01}}</span>
                 </div>
             </div>

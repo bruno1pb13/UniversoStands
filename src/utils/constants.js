@@ -8,13 +8,15 @@ function social() {
 }
 
 function contact(){
-    const phone01 = "(11) 9 9999-9999"
-    const phone02 = "(11) 9999-9999"
-    const mail01 = "universo@universostands.com"
+    const phone01 = "(51) 9 9945-0383"
+    const phone01raw = "51999450383"
+    const phone02 = "(11) 9 1703-9455"
+    const phone02raw = "11917039455"
+    const mail01 = "us@us-brasil.com"
     const mail02 = "universostands@gmail.com"
     const address01 = "Schilling, 576, Conj 607s"
     const address02 = "Vila Leopoldina São Paulo/SP"
-    return { phone01, phone02, mail01, mail02, address01, address02}
+    return { phone01, phone01raw, phone02, phone02raw, mail01, mail02, address01, address02}
 }
 
 const constants = {

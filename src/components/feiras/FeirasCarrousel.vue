@@ -116,7 +116,7 @@ export default {
 <template>
     <Carousel :value="fairs" :numVisible="6" :numScroll="2" circular :autoplayInterval="3000" :showIndicators="false" :responsiveOptions="responsiveOptions">
       <template #item="slotProps">
-        <div class="rounded h-[10vw] w-[13vh] p-4 m-4 flex items-center justify-center">
+        <div class="rounded h-[10vw] w-[25vh] p-4 m-4 flex items-center justify-center">
           <img :src="slotProps.data.image" alt="" class="w-full h-auto object-contain">
         </div>
       </template>

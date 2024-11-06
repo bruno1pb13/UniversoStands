@@ -23,12 +23,14 @@
         "slogan": ["Building a universe of", "possibilities for you!"],
         "metrics": {
             "customers_served": "Customers Served",
-            "mounted_fairs": "Fairs Mounted",
-            "m_Built": "M² Built"
+            "mounted_fairs": "Fairs",
+            "m_Built": "M² Built",
+            "m_Built_thousand": "thousand"
+
         },
         "portfolio": {
             "title": "See our portfolio",
-            "text_01": "Explore our portfolio of customized and innovative projects. Our team transforms your ideas into reality, creating stands that highlight your brand and attract your target audience. Each project is developed with attention to detail and an unwavering commitment to quality. Discover how we can help elevate your presence at events.",
+            "text_01": "Explore our portfolio of customized and innovative projects. Our team transforms your ideas into reality, creating stands that highlight your brand and attract your target audience. Each project is developed with attention to detail and commitment to quality. Discover how we can help elevate your presence at events.",
             "redirect_button": "Check out some projects"
         },
         "partners": "Partners",
@@ -37,7 +39,12 @@
         },
         "callUs": {
             "title": "Contact us",
-            "subtitle": "Our team is here to help"
+            "subtitle": "Our team is here to help you",
+            "contact": {
+                "phone": "Phone number",
+                "address": "Address",
+                "mail": "Mail"
+            }
         }
     },
     "fairs": {
@@ -45,6 +52,7 @@
         "description": "Participating in fairs is a unique opportunity to highlight your brand and reach new customers. We are present at the largest events in the sector, providing creative and functional solutions that drive your success. Explore below some of the events where we have made our presence felt."
     },
     "stands": {
+        "title": "Stands",
         "scenographic": {
             "title": "Scenographic Stand",
             "description": "Here, imagination knows no bounds. In this option, you will receive all the materials from the Mixed Stand, with the addition of more landscaping, special LED lighting, and more sophisticated scenographic designs. Everything to make your brand and stand stand out at the exhibition."
@@ -90,10 +98,12 @@
         "contact": {
             "title": "Contact our sales team:",
             "description": "Our team is made up of professionals from all areas, including architects, designers, finance, carpenters, electricians. In short, everything so that you have the best experience at your event.",
+            "directory": "Diretora",
+            "management": "Gestão",
             "administrative": "Administrative",
             "sales_manager": "Sales Manager",
             "sales_team": "Sales Team",
-            "phone": "Phone / WhatsApp",
+            "phone": "Phone number",
             "address": "Address"
         }
     }

@@ -1,6 +1,10 @@
 <script>
-export default{
-    data(){
+
+import { useI18n } from 'vue-i18n';
+
+
+export default {
+    data() {
         return {
             clientes: 0,
             feiras: 0,
@@ -9,9 +13,9 @@ export default{
     },
     mounted() {
         const totalDuration = 4000; // Tempo total para todos os números (2 segundos)
-        this.animateNumber("clientes", 0, 2000, totalDuration);
-        this.animateNumber("feiras", 0, 200, totalDuration);
-        this.animateNumber("metros", 0, 5000, totalDuration);
+        this.animateNumber("clientes", 0, 450, totalDuration);
+        this.animateNumber("feiras", 0, 300, totalDuration);
+        this.animateNumber("metros", 0, 50000, totalDuration);
     },
     methods: {
         animateNumber(elementId, start, end, totalDuration) {
@@ -32,23 +36,28 @@ export default{
                     clearInterval(timer);
                 }
             }, stepTime);
-        }
+        },
+        formatNumber(number) {
+            const { locale } = useI18n(); // Obter o idioma atual do Vue I18n
+            return number.toLocaleString(locale._value, { style: "decimal" });
+        },
     },
 }
 </script>
 <template>
-    <div class="flex flex-col gap-8 sm:gap-0 sm:flex-row align-center justify-between px-[14vw] text-center mb-[5em] sm:mb-[10em] mt-[2em] sm:mt-[5em]">
+    <div
+        class="flex flex-col gap-8 sm:gap-0 sm:flex-row align-center justify-between px-[14vw] text-center mb-[5em] sm:mb-[10em] mt-[2em] sm:mt-[5em]">
         <div class="flex flex-col w-full sm:w-[18vw]">
             <span class="font-bold text-[82px]" id="clientes">{{ clientes }}</span>
-            <span class="text-[30px]">{{$t('home.metrics.customers_served')}}</span>
+            <span class="text-[30px]">{{ $t('home.metrics.customers_served') }}</span>
         </div>
         <div class="flex flex-col w-full sm:w-[18vw]">
             <span class="font-bold text-[82px]" id="feiras">{{ feiras }}</span>
-            <span class="text-[30px]">{{$t('home.metrics.mounted_fairs')}}</span>
+            <span class="text-[30px]">{{ $t('home.metrics.mounted_fairs') }}</span>
         </div>
         <div class="flex flex-col w-full sm:w-[18vw]">
-            <span class="font-bold text-[82px]" id="metros">{{ metros }}</span>
-            <span class="text-[30px]">{{$t('home.metrics.m_Built')}}</span>
+            <span class="font-bold text-[82px]" id="metros">{{ formatNumber(metros)}}</span>
+            <span class="text-[30px]">{{ $t('home.metrics.m_Built') }}</span>
         </div>
     </div>
 </template>
