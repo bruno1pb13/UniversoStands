@@ -93,7 +93,7 @@ export default{
       </div>
 
       <button @click="goToStands()" class="bg-[#663399] w-full text-white h-[60px] rounded-full flex justify-between items-center px-[2em]">
-        <span  class="text-[20px] font-normal " style="font-weight:300">{{ $t('home.portfolio.redirect_button') }}a</span>
+        <span  class="text-[20px] font-normal " style="font-weight:300">{{ $t('home.portfolio.redirect_button') }}</span>
         <img src="/assets/icons/Arrow.svg" alt="">
     </button>
 
