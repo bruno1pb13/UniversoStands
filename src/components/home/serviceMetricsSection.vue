@@ -39,7 +39,7 @@ export default {
         },
         formatNumber(number) {
             const { locale } = useI18n(); // Obter o idioma atual do Vue I18n
-            return number.toLocaleString(locale._value, { style: "decimal" });
+            return number.toLocaleString('pt-br', { style: "decimal" });
         },
     },
 }

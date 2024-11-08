@@ -5,7 +5,6 @@ import Mainfooter from "../components/navigation/footer.vue";
 export default {
   methods: {
     openWhatspp() {
-      console.log('?')
       window.open('https://www.whatsapp.com/?lang=pt_BR', '_blank');
     }
   },

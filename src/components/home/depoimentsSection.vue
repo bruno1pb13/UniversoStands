@@ -1,5 +1,60 @@
+<script>
+import { useI18n } from "vue-i18n";
+
+export default {
+  data() {
+    return {
+      currentIndex: 0,
+      depoiments: null,
+    };
+  },
+  mounted(){
+    this.updateDepoiments();
+  },
+  computed: {
+    currentTestimonial() {
+      return this.depoiments[this.currentIndex];
+    },
+  },
+  methods: {
+    nextTestimonial() {
+      this.currentIndex = (this.currentIndex + 1) % this.depoiments.length;
+    },
+    prevTestimonial() {
+      this.currentIndex =
+        (this.currentIndex - 1 + this.depoiments.length) %
+        this.depoiments.length;
+    },
+    updateDepoiments() {
+      let dp = [];
+
+      for (let i = 0; i < 4; i++) {
+        dp.push({
+          author: this.$t(`depoiments.list[${i}].author`),
+          picture: this.$t(`depoiments.list[${i}].picture`),
+          enterprise: this.$t(`depoiments.list[${i}].enterprise`),
+          content: this.$t(`depoiments.list[${i}].content`),
+          img: this.$t(`depoiments.list[${i}].img`),
+          standType: this.$t(`depoiments.list[${i}].standType`),
+          locale: this.$t(`depoiments.list[${i}].locale`),
+          date: this.$t(`depoiments.list[${i}].date`),
+        });
+      }
+
+      this.depoiments = dp;
+    },
+  },
+  watch: {
+    '$i18n.locale': function(newLocale, oldLocale) {
+      this.updateDepoiments();
+    }
+  }
+};
+</script>
+
 <template>
   <div
+    v-if="depoiments"
     class="hidden sm:grid grid-cols-5 grid-rows-5 bg-[#E6007E] p-[7vw] gap-[7vw] relative"
   >
     <div
@@ -57,12 +112,12 @@
     </div>
   </div>
   <div
+    v-if="depoiments"
     class="sm:hidden flex flex-col gap-4 bg-[#E6007E] p-[7vw] gap-[7vw] relative"
   >
-    <span
-      class="font-bold text-[40px] text-center text-white"
-      >{{ $t("home.depoiments.title") }}</span
-    >
+    <span class="font-bold text-[40px] text-center text-white">{{
+      $t("home.depoiments.title")
+    }}</span>
 
     <transition name="fade" mode="out-in" class="">
       <div
@@ -97,68 +152,15 @@
         @click="nextTestimonial"
         class="right-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
       >
-        <img src="/assets/icons/arrow_circle.png" alt="Next" class="rotate-180" />
+        <img
+          src="/assets/icons/arrow_circle.png"
+          alt="Next"
+          class="rotate-180"
+        />
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      currentIndex: 0,
-      depoiments: [
-        {
-          author: "Roberta Viena",
-          picture: "/assets/depoiments/roberta.jpg",
-          enterprise: "",
-          content:
-            "Trabalho com a Universo há um tempo, empresa super competente, com qualidade de produtos, serviços, atendiemnto ao cliente e com muita eficiência operacional. Eloilza sempre muito simpática, paciente e prestativa.",
-          img: "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
-        },
-        {
-          author: "Sabrina Avelar",
-          picture: "/assets/depoiments/sabrina.png",
-          enterprise: "",
-          content: "Profissional excelente! Super indico! Sucesso!",
-          img: "/assets/lorem/OIG4.n5.jpeg",
-        },
-        {
-          author: "Jackson Viapiana",
-          picture: "/assets/depoiments/jack.jpg",
-          enterprise: "KARIKAL",
-          content:"Muito boa.",
-          img: "/assets/lorem/OIG2.jpeg",
-        },
-        {
-          author: "Eduardo Prado",
-          picture: "/assets/depoiments/eduardo.jpg",
-          enterprise: "",
-          content:"Sempre nos atenderam muito bem!",
-          img: "/assets/lorem/OIG2.jpeg",
-        },
-      ],
-    };
-  },
-  computed: {
-    currentTestimonial() {
-      return this.depoiments[this.currentIndex];
-    },
-  },
-  methods: {
-    nextTestimonial() {
-      this.currentIndex = (this.currentIndex + 1) % this.depoiments.length;
-    },
-    prevTestimonial() {
-      this.currentIndex =
-        (this.currentIndex - 1 + this.depoiments.length) %
-        this.depoiments.length;
-    },
-  },
-};
-</script>
-
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {

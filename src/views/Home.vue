@@ -4,6 +4,7 @@ import depoimentsSection from '../components/home/depoimentsSection.vue';
 import portfolioSection from '../components/home/portfolioSection.vue'
 import partnersCarrousel from '../components/home/partnersCarrousel.vue';
 import serviceMetricsSection from "../components/home/serviceMetricsSection.vue"
+import mainCarrousel from '../components/home/mainCarrousel.vue';
 
 export default {
     components: {
@@ -12,6 +13,7 @@ export default {
         portfolioSection,
         partnersCarrousel,
         serviceMetricsSection,
+        mainCarrousel
     }
 }
 </script>
@@ -38,8 +40,8 @@ export default {
         </div>
         <div class="relative w-full h-[20vh] sm:h-[60vh] ">
             <div
-                class="absolute top-[-3em] sm:top-[-10em] left-1/2 transform -translate-x-1/2  w-[80vw] sm:w-[50vw] h-[68vh] rounded-xl overflow-hidden drop-shadow-md">
-                <img src="/pictures/banner.png" class="w-full h-auto object-cover" alt="">
+                class="absolute top-[-3em] sm:top-[-10em] left-1/2 transform -translate-x-1/2  w-[80vw] sm:w-[50vw] h-[68vh] rounded-xl overflow-hidden drop-shadow-md bg-[white]">
+                <mainCarrousel/>
             </div>
         </div>
 

@@ -1,7 +1,7 @@
 {
     "lang": "Português",
     "nav": {
-        "pages" : {
+        "pages": {
             "home": "Home",
             "fairs": "Feiras",
             "stands": "Stands",
@@ -12,7 +12,7 @@
             "pt_br": "Português",
             "en_us": "Inglês"
         },
-        "contact" : "Contato"
+        "contact": "Contato"
     },
     "footer": {
         "phone": "Telefone",
@@ -20,15 +20,18 @@
         "social": "Redes sociais"
     },
     "home": {
-        "slogan" : ["Construindo um universo de", "possibilidades para você!"],
+        "slogan": [
+            "Construindo um universo de",
+            "possibilidades para você!"
+        ],
         "metrics": {
-            "customers_served" : "Clientes Atendidos",
-            "mounted_fairs" : "Feiras Montadas",
-            "m_Built" : "M² Construídos",
+            "customers_served": "Clientes Atendidos",
+            "mounted_fairs": "Feiras Montadas",
+            "m_Built": "M² Construídos",
             "m_Built_thousand": "mil"
         },
         "portfolio": {
-            "title" : "Vejá nosso portifólio",
+            "title": "Veja nosso portifólio",
             "text_01": "Explore o nosso portfólio de projetos personalizados e inovadores. Nossa equipe transforma suas ideias em realidade, criando stands que destacam sua marca e atraem seu público-alvo. Cada projeto é desenvolvido com atenção aos detalhes e um compromisso inabalável com a qualidade. Descubra como podemos ajudar a elevar sua presença em eventos.",
             "redirect_button": "Confira alguns projetos"
         },
@@ -37,8 +40,8 @@
             "title": "Depoimentos"
         },
         "callUs": {
-            "title" : "Fale conosco",
-            "subtitle" : "Nosso time está aqui para ajudar",
+            "title": "Fale conosco",
+            "subtitle": "Nosso time está aqui para ajudar",
             "contact": {
                 "phone": "Telefone / Whatsapp",
                 "address": "Endereço",
@@ -48,7 +51,8 @@
     },
     "fairs": {
         "title": "Feiras",
-        "description": "Participar de feiras é uma oportunidade única para destacar sua marca e alcançar novos clientes. Estamos presentes nos maiores eventos do setor, proporcionando soluções criativas e funcionais que impulsionam o seu sucesso. Explore abaixo alguns dos eventos em que marcamos presença."
+        "description": "Participar de feiras é uma oportunidade única para destacar sua marca e alcançar novos clientes. Estamos presentes nos maiores eventos do setor, proporcionando soluções criativas e funcionais que impulsionam o seu sucesso. Explore abaixo alguns dos eventos em que marcamos presença.",
+        "partner": "Parceria US Brasil - FCEM"
     },
     "stands": {
         "title": "Stands",
@@ -77,11 +81,11 @@
         },
         "values": {
             "title": "Nossos valores",
-            "safety" : {
+            "safety": {
                 "title": "SEGURANÇA: ",
                 "description": "A vida em primeiro lugar."
             },
-            "ethics" : {
+            "ethics": {
                 "title": "ÉTICA: ",
                 "description": "Agir de forma correta e transparente."
             },
@@ -89,13 +93,13 @@
                 "title": "RECONHECIMENTO: ",
                 "description": "Valorizar quem faz a nossa empresa crescer e evoluir."
             },
-            "responsability" : {
+            "responsability": {
                 "title": "RESPONSABILIDADE: ",
                 "description": "Juntos cuidar do nosso planeta e meio ambiente."
             }
         },
         "contact": {
-            "title" : "Entre em contato com nosso time de vendas:",
+            "title": "Entre em contato com nosso time de vendas:",
             "description": "Nossa equipe é formada por profissionais de todas as áreas, desde arquitetos, projetistas, finanças, marceneiros, eletricistas. Enfim, tudo para que você tenha a melhor experiencia no seu evento.",
             "directory": "Diretora",
             "management": "Gestão",
@@ -105,5 +109,49 @@
             "phone": "Telefone / Whatsapp",
             "address": "Endereço"
         }
+    },
+    "depoiments": {
+        "list": [
+            {
+                "author": "Roberta Viena",
+                "picture": "/assets/depoiments/roberta.jpg",
+                "enterprise": "",
+                "content": "Trabalho com a Universo há um tempo, empresa super competente, com qualidade de produtos, serviços, atendiemnto ao cliente e com muita eficiência operacional. Eloilza sempre muito simpática, paciente e prestativa.",
+                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            },
+            {
+                "author": "Sabrina Avelar",
+                "picture": "/assets/depoiments/sabrina.png",
+                "enterprise": "",
+                "content": "Profissional excelente! Super indico! Sucesso!",
+                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            },
+            {
+                "author": "Jackson Viapiana",
+                "picture": "/assets/depoiments/jack.jpg",
+                "enterprise": "KARIKAL",
+                "content": "Muito boa.",
+                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            },
+            {
+                "author": "Eduardo Prado",
+                "picture": "/assets/depoiments/eduardo.jpg",
+                "enterprise": "",
+                "content": "Sempre nos atenderam muito bem!",
+                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            }
+        ]
     }
 }

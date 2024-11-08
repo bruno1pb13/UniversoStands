@@ -6,24 +6,16 @@ export default {
     data() {
         return {
             partners: [
-                { image: "/assets/partners/dazEventos.jpg", name: "Daz Eventos" },
+                { image: "/assets/partners/dazEventos.jpg", name: "Daz Eventos" , link: "" },
                 { image: "/assets/partners/BrindesImport.png", name: "Brinder Import" },
                 { image: "/assets/partners/NB.jpg", name: "NB" },
-                { image: "/assets/partners/PontoDosBrindes.png", name: "Ponto dos brindes" },
-                { image: "/assets/partners/zwEventos.png", name: "ZW Eventos" },
+                { image: "/assets/partners/PontoDosBrindes.png", name: "Ponto dos brindes"},
+                { image: "/assets/partners/zwEventos.png", name: "ZW Eventos", link: "https://www.instagram.com/zweeventos/" },
                 { image: "/assets/partners/doc.png", name: "Doc" },
-                { image: "/assets/partners/dazEventos.jpg", name: "Daz Eventos" },
-                { image: "/assets/partners/BrindesImport.png", name: "Brinder Import" },
-                { image: "/assets/partners/NB.jpg", name: "NB" },
-                { image: "/assets/partners/PontoDosBrindes.png", name: "Ponto dos brindes" },
-                { image: "/assets/partners/zwEventos.png", name: "ZW Eventos" },
-                { image: "/assets/partners/doc.png", name: "Doc" },
-                { image: "/assets/partners/dazEventos.jpg", name: "Daz Eventos" },
-                { image: "/assets/partners/BrindesImport.png", name: "Brinder Import" },
-                { image: "/assets/partners/NB.jpg", name: "NB" },
-                { image: "/assets/partners/PontoDosBrindes.png", name: "Ponto dos brindes" },
-                { image: "/assets/partners/zwEventos.png", name: "ZW Eventos" },
-                { image: "/assets/partners/doc.png", name: "Doc" }
+                { image: "/assets/partners/danLin.jfif", name: "danLin", link: "https://www.instagram.com/danlu.buffet?igsh=bXNibWwyaGZ2bXpw" },
+                { image: "/assets/partners/rrPersonalizados.png", name: "RRPersonalizados", link: "https://wa.me/555197908970" },
+                { image: "/assets/partners/primeTravel.jpg", name: "Prime Travel"},
+                
             ],
             responsiveOptions: [
                 {
@@ -44,6 +36,12 @@ export default {
             ]
         }
     },
+    methods: {
+        open(link){
+            if(link)
+                window.open(link, '_blank');
+        }
+    },
     components: {
         Carousel
     }
@@ -52,9 +50,9 @@ export default {
 </script>
 
 <template>
-    <Carousel :value="partners" :numVisible="6" :numScroll="2" circular :autoplayInterval="3000" :showIndicators="false" :responsiveOptions="responsiveOptions">
+    <Carousel :value="[...partners, ...partners]" :numVisible="6" :numScroll="2" circular :autoplayInterval="3000" :showIndicators="false" :responsiveOptions="responsiveOptions">
         <template #item="slotProps">
-            <div class="carousel-item-container rounded p-4 m-4 flex items-center justify-center">
+            <div @click="open(slotProps.data.link)" :class="slotProps.data.link? ' cursor-pointer' : '' " class=" carousel-item-container rounded p-4 m-4 flex items-center justify-center">
                 <img :src="slotProps.data.image" alt="" class="carousel-image">
             </div>
         </template>

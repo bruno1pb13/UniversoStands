@@ -22,16 +22,13 @@ export default {
         <section>
             <FeirasCarrousel />
         </section>
-        <section class="px-[2em] sm:px-[7em] ">
-            <div class="flex gap-2 items-center justify-center">
+        <section class="px-[2em] sm:px-[7em] w-full">
+            <span class="flex items-center justify-center text-center py-4 text-[20px] w-full">
+                {{$t("fairs.partner")}}
+            </span>
+            <div class="flex flex-col sm:flex-row gap-2 items-center justify-center">
                 <img src="/assets/fairs/calendario1.png" alt="" class="w-[40em] h-auto">
                 <img src="/assets/fairs/calendario2.png" alt="" class="w-[40em] h-auto">
-            </div>
-            
-            <div class="flex sm:hidden flex-col gap-[2em]">
-                <div v-for="i in 7" class="bg-gray-700 rounded">
-                    <img :src="randomImage(1920, 1080)" alt="" />
-                </div>
             </div>
         </section>
     </div>

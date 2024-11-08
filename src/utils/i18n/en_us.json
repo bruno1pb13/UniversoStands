@@ -49,7 +49,8 @@
     },
     "fairs": {
         "title": "Fairs",
-        "description": "Participating in fairs is a unique opportunity to highlight your brand and reach new customers. We are present at the largest events in the sector, providing creative and functional solutions that drive your success. Explore below some of the events where we have made our presence felt."
+        "description": "Participating in fairs is a unique opportunity to highlight your brand and reach new customers. We are present at the largest events in the sector, providing creative and functional solutions that drive your success. Explore below some of the events where we have made our presence felt.",
+        "partner" : "US Brasil - FCEM Partnership"
     },
     "stands": {
         "title": "Stands",
@@ -106,5 +107,49 @@
             "phone": "Phone number",
             "address": "Address"
         }
+    },
+    "depoiments": {
+        "list": [
+            {
+                "author": "Roberta Viena",
+                "picture": "/assets/depoiments/roberta.jpg",
+                "enterprise": "",
+                "content": "I have been working with Universo for a while now, a highly competent company, with quality products, services, customer service and very efficient operations. Eloilza is always very friendly, patient and helpful. ",
+                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            },
+            {
+                "author": "Sabrina Avelar",
+                "picture": "/assets/depoiments/sabrina.png",
+                "enterprise": "",
+                "content": "Excellent professional! I highly recommend it! Success!",
+                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            },
+            {
+                "author": "Jackson Viapiana",
+                "picture": "/assets/depoiments/jack.jpg",
+                "enterprise": "KARIKAL",
+                "content": "AWESOME! ",
+                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            },
+            {
+                "author": "Eduardo Prado",
+                "picture": "/assets/depoiments/eduardo.jpg",
+                "enterprise": "",
+                "content": "Always served us very well! ",
+                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            }
+        ]
     }
 }
