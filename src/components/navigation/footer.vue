@@ -3,7 +3,31 @@ import constants from '../../utils/constants'
 export default {
     data() {
         return {
-            contact: constants.contact
+            contact: constants.contact,
+            social: constants.social
+        }
+    },
+    methods: {
+        open(social) {
+            let url = "https://www.google.com/"
+
+            if (social == 'instagram') {
+                url = this.social.instagram
+            }
+
+            if (social == 'linkedin') {
+                url = this.social.linkedin
+            }
+
+            if (social == 'facebook') {
+                url = this.social.facebook
+            }
+
+            if (social == 'x') {
+                url = this.social.x
+            }
+
+            window.open(url, '_blank');
         }
     }
 }
@@ -28,28 +52,32 @@ export default {
                 </div>
 
                 <div class="flex flex-col">
-                    <span>LGPD</span>
+                    <span>‎ </span>
                     <ul>
                         <li>
                             <a href="/legal/politicadeprivacidade">
-                                Política de Privacidade
+                                {{ $t('docs.privacy_policy') }}
                             </a>
                         </li>
-                        <li>Preferências de Cookies</li>
+                        <li>
+                            <a :href="$t('docs.work_policy_file')" target=”_blank” >
+                                {{$t('docs.work_policy')}}
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="flex flex-col">
                     <span>{{$t('footer.social')}}</span>
                     <div class="flex w-[6em] sm:w-full gap-4 items-center justify-between">
-                        <div>
+                        <button @click="open('instagram')">
                             <img src="/assets/icons/instagram.svg" class="w-[1.5em] invert" alt="">
-                        </div>
-                        <div>
+                        </button>
+                        <button @click="open('linkedin')">
                             <img src="/assets/icons/linkedin.svg" class="w-[1.5em] invert" alt="">
-                        </div>
-                        <div>
+                        </button>
+                        <button @click="open('x')">
                             <img src="/assets/icons/facebook.svg" class="w-[.9em] invert" alt="">
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>

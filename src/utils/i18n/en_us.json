@@ -151,5 +151,10 @@
                 "date": "25/10/2023"
             }
         ]
+    },
+    "docs": {
+        "work_policy" : "Work policy",
+        "work_policy_file": "assets/docs/workPolicy.pdf",
+        "privacy_policy" : "Privacy policy"
     }
 }

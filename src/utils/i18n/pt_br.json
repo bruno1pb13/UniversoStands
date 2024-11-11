@@ -153,5 +153,10 @@
                 "date": "25/10/2023"
             }
         ]
+    },
+    "docs": {
+        "work_policy" : "Política de trabalho",
+        "work_policy_file": "assets/docs/politicaDeTrabalho.pdf",
+        "privacy_policy" : "Política de privacidade"
     }
 }
