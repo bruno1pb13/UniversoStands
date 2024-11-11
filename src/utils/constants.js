@@ -8,8 +8,8 @@ function social() {
 }
 
 function contact(){
-    const phone01 = "(51) 9 9945-0383"
-    const phone01raw = "51999450383"
+    const phone01 = "(51) 9 9945-0382"
+    const phone01raw = "51999450382"
     const phone02 = "(11) 9 1703-9455"
     const phone02raw = "11917039455"
     const mail01 = "us@us-brasil.com"

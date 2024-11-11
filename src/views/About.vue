@@ -76,7 +76,7 @@ export default {
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.administrative')}}</span>
                         <span class="text-[15px]">Tamara Diniz</span>
-                        <span class="text-[15px]"><a href="mailto:comercial@usbrasil.com">comercial@usbrasil.com</a></span>
+                        <span class="text-[15px]"><a href="mailto:tamara@us-brasil.com.br">tamara@us-brasil.com.br</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.sales_manager')}}</span>
