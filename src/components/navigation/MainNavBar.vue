@@ -5,7 +5,7 @@ export default {
     data() {
         return {
             currentPage: undefined,
-            logo: "/assets/LogoBranca.png",
+            logo: "/assets/LogoBranca.webp",
             langModal: false,
             currentFlag: "/assets/flags/pt-br.png",
             drawerState: false,
@@ -47,9 +47,9 @@ export default {
             setTimeout(() => {
                 this.updateIndicator();
                 if (["FEIRAS", "ABOUT"].includes(this.currentPage)) {
-                    this.logo = "/assets/LogoBrancaRosa.png";
+                    this.logo = "/assets/LogoBrancaRosa.webp";
                 } else {
-                    this.logo = "/assets/LogoBrancaRosa.png";
+                    this.logo = "/assets/LogoBrancaRosa.webp";
                 }
             }, 100);
         });
@@ -92,8 +92,8 @@ export default {
         updateCurrentFlag(lang) {
             this.currentFlag =
                 lang === "en_us"
-                    ? "/assets/flags/en-us.png"
-                    : "/assets/flags/pt-br.png";
+                    ? "/assets/flags/en-us.webp"
+                    : "/assets/flags/pt-br.webp";
         },
     },
     computed: {

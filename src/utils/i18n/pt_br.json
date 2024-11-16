@@ -114,30 +114,30 @@
         "list": [
             {
                 "author": "Alvaro Flores",
-                "picture": "/assets/depoiments/alvaroFlores.jpg",
+                "picture": "/assets/depoiments/alvaroFlores.webp",
                 "enterprise": "Grupo MK Química ",
                 "content": "Há muitos anos temos trabalhado com a Universo Stands. Desde sempre, fomos atendidos com excelência e os projetos foram muito bem executados. Também vale destacar a criatividade e as soluções apresentadas para as nossas demandas. Competência e relacionamento são as palavras que posso destacar na nossa parceria.",
-                "img": "/assets/depoiments/alvaroFloresStand.jpg",
+                "img": "/assets/depoiments/alvaroFloresStand.webp",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"
             },
             {
                 "author": "Roberta Viena",
-                "picture": "/assets/depoiments/roberta.jpg",
+                "picture": "/assets/depoiments/roberta.webp",
                 "enterprise": "Geave",
                 "content": "Trabalho com a Universo há um tempo, empresa super competente, com qualidade de produtos, serviços, atendiemnto ao cliente e com muita eficiência operacional. Eloilza sempre muito simpática, paciente e prestativa.",
-                "img": "/assets/depoiments/standRoberta.jpg",
+                "img": "/assets/depoiments/standRoberta.webp",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"
             },
             {
                 "author": "Eduardo Prado",
-                "picture": "/assets/depoiments/eduardo.jpg",
+                "picture": "/assets/depoiments/eduardo.webp",
                 "enterprise": "",
                 "content": "Sempre nos atenderam muito bem!",
-                "img":  "/assets/depoiments/plastecnica.jpg",
+                "img":  "/assets/depoiments/plastecnica.webp",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"
@@ -146,7 +146,7 @@
                 "author": "Jessica",
                 "enterprise": "Tecnofluid",
                 "content": "Obrigada pelo carinho e cuidado com nossa imagem durante toda a preparação. Sempre atenciosos e dispostos a entregar o melhor. Seguimos em frente e nos vemos nos próximos eventos Brasil a fora 🚀🙌🏽",
-                "img": "/assets/depoiments/tecnofluidStand.jpg",
+                "img": "/assets/depoiments/tecnofluidStand.webp",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"

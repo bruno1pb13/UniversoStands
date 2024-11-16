@@ -37,8 +37,8 @@ export default {
         <div class="flex flex-col justify-between h-full pt-[3em] text-white ">
             <div class="flex sm:flex-row gap-8 sm:gap-0 flex-col justify-between  px-[7vw]">
                 <div class="flex flex-col gap-4">
-                    <img src="/assets/LogoBrancaRosa.png" alt="" class="w-[14em] rounded">
-                    <img src="/assets/sindprom.png" alt="" class="w-[10em] bg-[white] rounded">
+                    <img src="/assets/LogoBrancaRosa.webp" alt="" class="w-[14em] rounded">
+                    <img src="/assets/sindprom.webp" alt="" class="w-[10em] bg-[white] rounded">
                 </div>
                 <div class="flex flex-col">
                     <span>{{ $t('footer.phone') }}</span>

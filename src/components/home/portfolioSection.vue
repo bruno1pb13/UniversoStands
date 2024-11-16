@@ -5,23 +5,23 @@ export default{
         return {
             stands: [
                 {
-                    itemImageSrc: 'assets/stands/cenografico/graniAmici.jpeg',
-                    thumbnailImageSrc: 'assets/stands/cenografico/graniAmici.jpeg',
+                    itemImageSrc: 'assets/stands/cenografico/graniAmici.webp',
+                    thumbnailImageSrc: 'assets/stands/cenografico/graniAmici.webp',
                     alt: 'Grani Amici',
                 },
                 {
-                    itemImageSrc: 'assets/stands/cenografico/origetec01.JPG',
-                    thumbnailImageSrc: 'assets/stands/cenografico/origetec01.JPG',
+                    itemImageSrc: 'assets/stands/cenografico/origetec01.webp',
+                    thumbnailImageSrc: 'assets/stands/cenografico/origetec01.webp',
                     alt: 'Origetec',
                 },
                 {
-                    itemImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao01.jpg',
-                    thumbnailImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao01.jpg',
+                    itemImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao01.webp',
+                    thumbnailImageSrc: 'assets/stands/cenografico/porcelanaMonteSiao01.webp',
                     alt: 'Porcelana Monte Sião',
                 },
                 {
-                    itemImageSrc: 'assets/stands/misto/evastec02.JPG',
-                    thumbnailImageSrc: 'assets/stands/misto/evastec02.JPG',
+                    itemImageSrc: 'assets/stands/misto/evastec02.webp',
+                    thumbnailImageSrc: 'assets/stands/misto/evastec02.webp',
                     alt: 'Evastec',
                 },
             ]

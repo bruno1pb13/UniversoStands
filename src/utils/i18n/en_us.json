@@ -112,30 +112,30 @@
         "list": [
             {
                 "author": "Alvaro Flores",
-                "picture": "/assets/depoiments/alvaroFlores.jpg",
+                "picture": "/assets/depoiments/alvaroFlores.webp",
                 "enterprise": "Grupo MK Química ",
                 "content": "We have been working with Universo Stands for many years. From the very beginning, we have been excellently served, and the projects have been very well executed. It's also worth highlighting the creativity and the solutions they provide for our demands. Competence and relationship are the key words I would use to describe our partnership.",
-                "img": "/assets/depoiments/alvaroFloresStand.jpg",
+                "img": "/assets/depoiments/alvaroFloresStand.webp",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"
             },
             {
                 "author": "Roberta Viena",
-                "picture": "/assets/depoiments/roberta.jpg",
+                "picture": "/assets/depoiments/roberta.webp",
                 "enterprise": "Geave",
                 "content": "I have been working with Universo for a while now. It's a highly competent company, offering quality products, services, and customer service with great operational efficiency. Eloilza is always very kind, patient, and helpful.",
-                "img": "/assets/depoiments/standRoberta.jpg",
+                "img": "/assets/depoiments/standRoberta.webp",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"
             },
             {
                 "author": "Eduardo Prado",
-                "picture": "/assets/depoiments/eduardo.jpg",
+                "picture": "/assets/depoiments/eduardo.webp",
                 "enterprise": "",
                 "content": "They have always served us very well!",
-                "img":  "/assets/depoiments/plastecnica.jpg",
+                "img":  "/assets/depoiments/plastecnica.webp",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"
@@ -144,7 +144,7 @@
                 "author": "Jessica",
                 "enterprise": "Tecnofluid",
                 "content": "Thank you for the care and attention to our image throughout the entire preparation. Always attentive and committed to delivering the best. Let’s keep moving forward, and we’ll see each other at upcoming events across Brazil 🚀🙌🏽",
-                "img": "/assets/depoiments/tecnofluidStand.jpg",
+                "img": "/assets/depoiments/tecnofluidStand.webp",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"

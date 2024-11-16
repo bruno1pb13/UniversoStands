@@ -5,12 +5,12 @@ export default {
       currentIndex: 0,
       depoiments: [
         {
-          img: "/assets/stands/cenografico/porcelanaMonteSiao02.jpg",
+          img: "/assets/stands/cenografico/porcelanaMonteSiao02.webp",
         },
         {
-          img: "/assets/stands/cenografico/graniAmici.jpeg"        },
+          img: "/assets/stands/cenografico/graniAmici.webp"        },
         {
-          img: "/assets/stands/cenografico/origetec02.JPG"        },
+          img: "/assets/stands/cenografico/origetec02.webp"        },
       ],
     };
   },

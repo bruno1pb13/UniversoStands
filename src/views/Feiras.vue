@@ -27,8 +27,8 @@ export default {
                 {{$t("fairs.partner")}}
             </span>
             <div class="flex flex-col sm:flex-row gap-2 items-center justify-center">
-                <img src="/assets/fairs/calendario1.png" alt="" class="w-[40em] h-auto">
-                <img src="/assets/fairs/calendario2.png" alt="" class="w-[40em] h-auto">
+                <img src="/assets/fairs/calendario1.webp" alt="" class="w-[40em] h-auto">
+                <img src="/assets/fairs/calendario2.webp" alt="" class="w-[40em] h-auto">
             </div>
         </section>
     </div>

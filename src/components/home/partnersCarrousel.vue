@@ -6,15 +6,15 @@ export default {
     data() {
         return {
             partners: [
-                { image: "/assets/partners/dazEventos.jpg", name: "Daz Eventos" , link: "https://www.instagram.com/daz_eventos/" },
-                { image: "/assets/partners/BrindesImport.png", name: "Brinder Import", link:"https://brindesimport.com.br/"},
-                { image: "/assets/partners/NB.jpg", name: "NB", link: "https://www.nb3locacoes.com.br/"},
-                { image: "/assets/partners/PontoDosBrindes.png", name: "Ponto dos brindes", link:"https://www.instagram.com/pontodosbrindes_oficial/"},
-                { image: "/assets/partners/zwEventos.png", name: "ZW Eventos", link: "https://www.instagram.com/zweeventos/" },
-                { image: "/assets/partners/doc.png", name: "Doc", link: "https://www.docparaeventos.com.br/"},
-                { image: "/assets/partners/danLu.jfif", name: "danLu", link: "https://www.instagram.com/danlu.buffet?igsh=bXNibWwyaGZ2bXpw" },
-                { image: "/assets/partners/rrPersonalizados.png", name: "RRPersonalizados", link: "https://wa.me/555197908970" },
-                { image: "/assets/partners/primeTravel.jpg", name: "Prime Travel", link:"https://www.instagram.com/primetravel_viagens?igsh=ejhndGxrN2IxZ20z"},
+                { image: "/assets/partners/dazEventos.webp", name: "Daz Eventos" , link: "https://www.instagram.com/daz_eventos/" },
+                { image: "/assets/partners/BrindesImport.webp", name: "Brinder Import", link:"https://brindesimport.com.br/"},
+                { image: "/assets/partners/NB.webp", name: "NB", link: "https://www.nb3locacoes.com.br/"},
+                { image: "/assets/partners/PontoDosBrindes.webp", name: "Ponto dos brindes", link:"https://www.instagram.com/pontodosbrindes_oficial/"},
+                { image: "/assets/partners/zwEventos.webp", name: "ZW Eventos", link: "https://www.instagram.com/zweeventos/" },
+                { image: "/assets/partners/doc.webp", name: "Doc", link: "https://www.docparaeventos.com.br/"},
+                { image: "/assets/partners/danLu.webp", name: "danLu", link: "https://www.instagram.com/danlu.buffet?igsh=bXNibWwyaGZ2bXpw" },
+                { image: "/assets/partners/rrPersonalizados.webp", name: "RRPersonalizados", link: "https://wa.me/555197908970" },
+                { image: "/assets/partners/primeTravel.webp", name: "Prime Travel", link:"https://www.instagram.com/primetravel_viagens?igsh=ejhndGxrN2IxZ20z"},
                 
             ],
             responsiveOptions: [

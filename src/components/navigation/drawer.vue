@@ -10,7 +10,7 @@ export default {
     data() {
         return {
             drawerState: false,
-            logo: "/assets/LogoBranca.png",
+            logo: "/assets/LogoBranca.webp",
             langModal: false,
             currentFlag: "/assets/flags/pt-br.png",
         }
@@ -83,7 +83,7 @@ export default {
 <template>
     <Drawer @hide="$emit('hide')" position="right" v-model:visible="drawerState">
         <template #header>
-            <img src="/assets/LogoBranca.png" alt="Logo" class="w-[60%]" />
+            <img src="/assets/LogoBranca.webp" alt="Logo" class="w-[60%]" />
         </template>
         <div class="flex flex-col justify-between h-full border-none">
             <section class="relative">

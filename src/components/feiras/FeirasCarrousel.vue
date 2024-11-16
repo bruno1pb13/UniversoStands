@@ -8,7 +8,7 @@ export default {
   data(){
     return{
       fairs: [{
-          image: "/assets/fairs/abup_logo.png",
+          image: "/assets/fairs/abup_logo.webp",
           name: "Abup decor show",
       },
       {
@@ -16,23 +16,23 @@ export default {
           name: "XXXIV Ajorsul fair mercoóptica 2024",
       },
       {
-          image: "/assets/fairs/autopar.png",
+          image: "/assets/fairs/autopar.webp",
           name: "Autopar 12ª Feira de fornecedores da indústria automotiva",
       },
       {
-          image: "/assets/fairs/eletrometal_logo.png",
+          image: "/assets/fairs/eletrometal_logo.webp",
           name: "Eletro Metal Mecânica 2024",
       },
       {
-          image: "/assets/fairs/escolar.png",
+          image: "/assets/fairs/escolar.webp",
           name: "Escolar office Brasil",
       },
       {
-          image: "/assets/fairs/expoagas.png",
+          image: "/assets/fairs/expoagas.webp",
           name: "Expoagas",
       },
       {
-          image: "/assets/fairs/feira_hospitalar.png",
+          image: "/assets/fairs/feira_hospitalar.webp",
           name: "Hospitalar By Informa Markets",
       },
       {
@@ -40,51 +40,51 @@ export default {
           name: "Fispal Tecnologia 2025",
       },
       {
-          image: "/assets/fairs/logo_construsul.png",
+          image: "/assets/fairs/logo_construsul.webp",
           name: "Construsul",
       },
       {
-          image: "/assets/fairs/logo_febratex.png",
+          image: "/assets/fairs/logo_febratex.webp",
           name: "Feira Brasileira para a indústria têxtil",
       },
       {
-          image: "/assets/fairs/logo_intersolar.png",
+          image: "/assets/fairs/logo_intersolar.webp",
           name: "inter solar connection solar business | South America",
       },
       {
-          image: "/assets/fairs/logo_pet.png",
+          image: "/assets/fairs/logo_pet.webp",
           name: "pet",
       },
       {
-          image: "/assets/fairs/movelsul_logo.jpg",
+          image: "/assets/fairs/movelsul_logo.webp",
           name: "Movelsul, Feira de móveis | Brasil",
       },
       {
-          image: "/assets/fairs/AgresteTex.png",
+          image: "/assets/fairs/AgresteTex.webp",
           name: "Agreste Tex",
       },
       {
-          image: "/assets/fairs/BeautyEstheticShow.png",
+          image: "/assets/fairs/BeautyEstheticShow.webp",
           name: "Beauty & Esthetic Show",
       },
       {
-          image: "/assets/fairs/febratexSummit.png",
+          image: "/assets/fairs/febratexSummit.webp",
           name: "Febratex Summit",
       },
       {
-          image: "/assets/fairs/Febratex.png",
+          image: "/assets/fairs/Febratex.webp",
           name: "Febratex",
       },
       {
-          image: "/assets/fairs/febraTextil.png",
+          image: "/assets/fairs/febraTextil.webp",
           name: "Febra Têxtil",
       },
       {
-          image: "/assets/fairs/MaquintexSigns.png",
+          image: "/assets/fairs/MaquintexSigns.webp",
           name: "Maquintex Signs Pack&Graph Fortaleza",
       },
       {
-          image: "/assets/fairs/tecnotextilBrail.png",
+          image: "/assets/fairs/tecnotextilBrail.webp",
           name: "Tecnotêxtil Feira Brasil Têxtil",
       },
     ],
