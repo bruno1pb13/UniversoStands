@@ -197,15 +197,15 @@ export default {
                         <img :src="scenographicImages[2].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('scenographicImages', 4)"
-                        class="bg-gray-700 rounded col-span-5 row-span-3 col-start-6 row-start-5 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-7 sm:col-span-5 row-span-3 col-start-6 row-start-5 overflow-hidden">
                         <img :src="scenographicImages[4].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('scenographicImages', 5)"
-                        class="bg-gray-700 rounded col-span-5 row-span-3 col-start-6 row-start-8 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-7 sm:col-span-5 row-span-3 col-start-6 row-start-8 overflow-hidden">
                         <img :src="scenographicImages[5].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div
-                        class="bg-gray-700 rounded col-span-2 row-span-6 col-start-11 row-start-5 overflow-hidden">
+                        class="hidden sm:block bg-gray-700 rounded col-span-2 row-span-6 col-start-11 row-start-5 overflow-hidden">
                         <video class="w-full h-full object-cover responsive-video" controls autoplay muted>
                             <source :src="scenographicImages[6].itemImageSrc" type="video/mp4" />
                             Seu navegador não suporta o elemento de vídeo.
@@ -228,23 +228,23 @@ export default {
                         <img :src="mistImages[1].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('mistImages', 2)"
-                        class="bg-gray-700 rounded col-span-4 row-span-4 row-start-5 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-6 sm:col-span-4 row-span-4 row-start-5 overflow-hidden">
                         <img :src="mistImages[2].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('mistImages', 3)"
-                        class="bg-gray-700 rounded col-span-4 row-span-4 col-start-1 row-start-9 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-6 sm:col-span-4 row-span-4 col-start-1 row-start-9 overflow-hidden">
                         <img :src="mistImages[3].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('mistImages', 4)"
-                        class="bg-gray-700 rounded col-span-4 row-span-4 col-start-9 row-start-5 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-6 sm:col-span-4 row-span-4 col-start-7 sm:col-start-9 row-start-5 overflow-hidden">
                         <img :src="mistImages[4].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('mistImages', 5)"
-                        class="bg-gray-700 rounded col-span-4 row-span-4 col-start-9 row-start-9 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-6 sm:col-span-4 row-span-4 col-start-7 sm:col-start-9 row-start-9 overflow-hidden">
                         <img :src="mistImages[5].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('mistImages', 6)"
-                        class="bg-gray-700 rounded col-span-4 row-span-8 col-start-5 row-start-5 overflow-hidden">
+                        class="hidden sm:blockbg-gray-700 rounded col-span-4 row-span-8 col-start-5 row-start-5 overflow-hidden">
                         <img :src="mistImages[6].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                 </div>
@@ -257,7 +257,7 @@ export default {
             <div>
                 <div class="grid grid-cols-12 grid-rows-13 gap-4 h-[30em] sm:h-[60em]">
                     <div
-                        class="bg-gray-700 rounded col-span-2 row-span-8 overflow-hidden">
+                        class=" hidden sm:block bg-gray-700 rounded col-span-2 row-span-8 overflow-hidden">
                         <video class="w-full h-full object-cover responsive-video" controls autoplay muted>
                             <source :src="basicImages[0].itemImageSrc" type="video/mp4" />
                             Seu navegador não suporta o elemento de vídeo.
@@ -268,7 +268,7 @@ export default {
                         <img :src="basicImages[1].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('basicImages', 2)"
-                        class="bg-gray-700 rounded col-span-6 row-span-8 col-start-3 row-start-1 overflow-hidden">
+                        class="bg-gray-700 rounded col-span-8 sm:col-span-6 row-span-8 col-start-0 sm:col-start-3 row-start-1 overflow-hidden">
                         <img :src="basicImages[2].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('basicImages', 3)"

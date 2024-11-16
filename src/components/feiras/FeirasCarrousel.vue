@@ -101,7 +101,7 @@ export default {
         },
         {
           breakpoint: '560px',
-          numVisible: 2,
+          numVisible: 1,
           numScroll: 1,
         }
       ] 
