@@ -33,16 +33,16 @@ export default {
 </script>
 
 <template>
-  <div class="flex bg-[#663399] relative overflow-hidden max-w-[100vw] h-full">
+  <div class="flex bg-[#663399] relative overflow-hidden max-w-[100vw] h-[30em] sm:h-full">
     <div
       @click="prevTestimonial"
-      class="hidden sm:block absolute left-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
+      class="block absolute left-[2vw] top-[35%] sm:top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
     >
       <img src="/assets/icons/arrow_circle.png" alt="Previous" />
     </div>
     <div
       @click="nextTestimonial"
-      class="hidden sm:block absolute right-[2vw] top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
+      class="block absolute right-[2vw] top-[35%] sm:top-[50%] w-[3em] h-[3em] rounded-full cursor-pointer hover:scale-[1.05] duration-200 ease-in-out"
     >
       <img src="/assets/icons/arrow_circle.png" alt="Next" class="rotate-180" />
     </div>
@@ -52,7 +52,7 @@ export default {
         <img
           :src="currentTestimonial.img"
           alt=""
-          class="w-full h-full object-cover rounded overflow-hidden flex items-center justify-center"
+          class="w-full h-full object-cover rounded overflow-hidden flex items-center justify-center "
         />
       </transition>
     </div>

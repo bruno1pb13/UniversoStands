@@ -38,9 +38,9 @@ export default {
                 <div class="pattern w-full h-[5em] sm:h-[8em]"></div>
             </div>
         </div>
-        <div class="relative w-full h-[20vh] sm:h-[60vh] ">
+        <div class="relative w-full h-[40vh] sm:h-[60vh] ">
             <div
-                class="absolute top-[-3em] sm:top-[-10em] left-1/2 transform -translate-x-1/2  w-[80vw] sm:w-[50vw] h-[68vh] rounded-xl overflow-hidden drop-shadow-md bg-[white]">
+                class="absolute top-[-3em] sm:top-[-10em] left-1/2 transform -translate-x-1/2  w-[80vw] sm:w-[50vw] h-[40vh] sm:h-[68vh] rounded-xl overflow-hidden drop-shadow-md bg-[white]">
                 <mainCarrousel/>
             </div>
         </div>
