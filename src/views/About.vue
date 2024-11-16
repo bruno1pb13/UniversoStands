@@ -66,46 +66,46 @@ export default {
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.directory')}}</span>
                         <span class="text-[15px]">Eloilza Goulart </span>
-                        <span class="text-[15px]"><a href="mailto:eloilza.goulart@us-brasil.com">eloilza.goulart@us-brasil.com</a></span>
+                        <span class="text-[15px]"><a title="Eloiza mail"  href="mailto:eloilza.goulart@us-brasil.com">eloilza.goulart@us-brasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.management')}}</span>
                         <span class="text-[15px]">Greici Goulart </span>
-                        <span class="text-[15px]"><a href="mailto:greici.goulart@us-brasil.com">greici.goulart@us-brasil.com</a></span>
+                        <span class="text-[15px]"><a title="Greici mail"  href="mailto:greici.goulart@us-brasil.com">greici.goulart@us-brasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.administrative')}}</span>
                         <span class="text-[15px]">Tamara Diniz</span>
-                        <span class="text-[15px]"><a href="mailto:tamara@us-brasil.com.br">tamara@us-brasil.com.br</a></span>
+                        <span class="text-[15px]"><a title="Tamara mail"  href="mailto:tamara@us-brasil.com.br">tamara@us-brasil.com.br</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.sales_manager')}}</span>
                         <span class="text-[15px]">Thiago Padilha </span>
-                        <span class="text-[15px]"><a href="mailto:thiago.padilha@us-brasil.com">thiago.padilha@us-brasil.com</a></span>
+                        <span class="text-[15px]"><a title="Thiago mail" href="mailto:thiago.padilha@us-brasil.com">thiago.padilha@us-brasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px] font-bold">{{$t('about.contact.sales_team')}}</span>
                         <span class="text-[15px]">Barbara Nathielly</span>
-                        <span class="text-[15px]"><a href="mailto:barbara@us-brasil.com">barbara@us-brasil.com</a></span>
+                        <span class="text-[15px]"><a title="Barbara mail" href="mailto:barbara@us-brasil.com">barbara@us-brasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px]">Lucas Gonçalves </span>
-                        <span class="text-[15px]"><a href="mailto:lucas@us-brasil.com">lucas@us-brasil.com</a></span>
+                        <span class="text-[15px]"><a title="Lucas mail" href="mailto:lucas@us-brasil.com">lucas@us-brasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px]">Patrícia Fritz</span>
-                        <span class="text-[15px]"><a href="mailto:patricia@us-brasil.com">patricia@us-brasil.com</a></span>
+                        <span class="text-[15px]"><a title="Patricia mail" href="mailto:patricia@us-brasil.com">patricia@us-brasil.com</a></span>
                     </div>
                     <div class="flex flex-col leading-tight ">
                         <span class="text-[15px]">Regiane Santos</span>
-                        <span class="text-[15px]"><a href="mailto:regiane@us-brasil.com">regiane@us-brasil.com</a></span>
+                        <span class="text-[15px]"><a title="Regiane mail" href="mailto:regiane@us-brasil.com">regiane@us-brasil.com</a></span>
                     </div>
                 </div>
                 <div class="flex gap-4">
                     <div class="flex flex-col leading-tight">
                         <span class="text-[15px] font-bold">{{$t('about.contact.phone')}}</span>
-                        <a :href="'tel:'+contact.phone01raw" class="text-[15px]">{{ contact.phone01 }}</a>
-                        <a :href="'tel:'+contact.phone02raw" class="text-[15px]">{{ contact.phone02 }}</a>
+                        <a title="phone number" :href="'tel:'+contact.phone01raw" class="text-[15px]">{{ contact.phone01 }}</a>
+                        <a title="phone number" :href="'tel:'+contact.phone02raw" class="text-[15px]">{{ contact.phone02 }}</a>
                     </div>
                 </div>
                 <div class="flex gap-4">
@@ -120,7 +120,7 @@ export default {
             </div>
             <div class=" col-span-4 row-span-3 col-start-5 row-start-2 ">
                 <div class="w-[100%] h-[35em] rounded overflow-hidden bg-[black]">
-                    <iframe width="100%" height="100%" frameborder="0" scrolling="no"
+                    <iframe title="maps" width="100%" height="100%" frameborder="0" scrolling="no"
                         marginheight="0" marginwidth="0"
                         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R.%20Schilling,%20576%20-%20Conj%20607%20-%20Vila%20Leopoldina+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                     </iframe>

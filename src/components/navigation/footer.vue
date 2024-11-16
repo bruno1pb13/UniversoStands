@@ -55,12 +55,12 @@ export default {
                     <span>‎ </span>
                     <ul>
                         <li>
-                            <a href="/legal/politicadeprivacidade">
+                            <a :title="$t('docs.privacy_policy')" href="/legal/politicadeprivacidade">
                                 {{ $t('docs.privacy_policy') }}
                             </a>
                         </li>
                         <li>
-                            <a :href="$t('docs.work_policy_file')" target=”_blank” >
+                            <a :title="$t('docs.work_policy')" :href="$t('docs.work_policy_file')" target=”_blank” >
                                 {{$t('docs.work_policy')}}
                             </a>
                         </li>
@@ -69,13 +69,13 @@ export default {
                 <div class="flex flex-col">
                     <span>{{$t('footer.social')}}</span>
                     <div class="flex w-[6em] sm:w-full gap-4 items-center justify-between">
-                        <button @click="open('instagram')">
+                        <button id="instagram" title="instagram" @click="open('instagram')">
                             <img src="/assets/icons/instagram.svg" class="w-[1.5em] invert" alt="">
                         </button>
-                        <button @click="open('linkedin')">
+                        <button id="linkedin" title="linkedin" @click="open('linkedin')">
                             <img src="/assets/icons/linkedin.svg" class="w-[1.5em] invert" alt="">
                         </button>
-                        <button @click="open('x')">
+                        <button id="facebook" title="facebook" @click="open('facebook')">
                             <img src="/assets/icons/facebook.svg" class="w-[.9em] invert" alt="">
                         </button>
                     </div>

@@ -1,8 +1,8 @@
 function social() {
-    const instagram = 'https://www.instagram.com/universo_stands';
+    const instagram = 'https://www.instagram.com/universo_stands/';
     const x = 'http://x.com';
-    const linkedin = 'https://www.linkedin.com/in/universo-stands-803328261';
-    const facebook = 'https://www.facebook.com/Universostands23';
+    const linkedin = 'https://www.linkedin.com/company/universo-stands/';
+    const facebook = 'https://www.facebook.com/usbrasilstands?locale=pt_BR';
 
     return { instagram, x, linkedin, facebook };
 }
