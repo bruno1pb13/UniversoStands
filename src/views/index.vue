@@ -3,11 +3,6 @@ import MainNavBar from "../components/navigation/MainNavBar.vue";
 import Mainfooter from "../components/navigation/footer.vue";
 
 export default {
-  methods: {
-    openWhatspp() {
-      window.open('https://api.whatsapp.com/send?phone=5551999450382&text=Mais%20informa%C3%A7%C3%B5es%20sobre:', '_blank');
-    }
-  },
   components: {
     MainNavBar,
     Mainfooter,
@@ -19,7 +14,7 @@ export default {
   <div class="fixed bottom-5 right-5 z-[1000]">
     <a
       title="Whatsapp"
-      href="https://wa.me/5511999999999" 
+      href="https://api.whatsapp.com/send?phone=5551999450382&text=Mais%20informa%C3%A7%C3%B5es%20sobre:" 
       target="_blank" 
       class="p-4 rounded-full shadow-lg "
     >
