@@ -18,11 +18,12 @@ export default {
 <template>
   <div class="fixed bottom-5 right-5 z-[1000]">
     <a
+      title="Whatsapp"
       href="https://wa.me/5511999999999" 
       target="_blank" 
       class="p-4 rounded-full shadow-lg "
     >
-    <img src="/assets/wp.webp" class="w-[5em] sm:w-[8em] h-auto hover:scale-110 easy-in-out duration-100">
+    <img src="/assets/wp.webp" alt="whatsapp" class="w-[5em] sm:w-[8em] h-auto hover:scale-110 easy-in-out duration-100">
     </a>
   </div>
 
