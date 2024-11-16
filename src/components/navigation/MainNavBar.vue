@@ -92,8 +92,8 @@ export default {
         updateCurrentFlag(lang) {
             this.currentFlag =
                 lang === "en_us"
-                    ? "/assets/flags/en-us.webp"
-                    : "/assets/flags/pt-br.webp";
+                    ? "/assets/flags/en-us.png"
+                    : "/assets/flags/pt-br.png";
         },
     },
     computed: {
