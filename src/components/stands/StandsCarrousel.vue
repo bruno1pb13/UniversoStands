@@ -29,9 +29,16 @@ export default {
       let dp = [];
 
       for (let i = 0; i < 4; i++) {
+
+        let pic = this.$t(`depoiments.list[${i}].picture`)
+        if(pic == `depoiments.list[${i}].picture`){
+          pic = undefined
+        }
+
+
         dp.push({
           author: this.$t(`depoiments.list[${i}].author`),
-          picture: this.$t(`depoiments.list[${i}].picture`),
+          picture: pic,
           enterprise: this.$t(`depoiments.list[${i}].enterprise`),
           content: this.$t(`depoiments.list[${i}].content`),
           img: this.$t(`depoiments.list[${i}].img`),
@@ -87,7 +94,7 @@ export default {
         >
           <div class="flex flex-col gap-12">
             <div class="flex gap-4" id="personInfo">
-              <div class="rounded overflow-hidden">
+              <div class="rounded overflow-hidden" v-if="currentTestimonial.picture">
                 <img
                   :src="currentTestimonial.picture"
                   alt="Author"
@@ -115,7 +122,7 @@ export default {
                 />
               </div>
             </div>
-            <div
+            <!-- <div
               id="standTypeAndLocale"
               class="grid grid-cols-2 grid-rows-1 gap-4"
             >
@@ -134,7 +141,7 @@ export default {
                   <span class="text-[18px]">Data</span>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </transition>
@@ -168,7 +175,7 @@ export default {
       >
         <div class="flex flex-col gap-12">
           <div class="flex gap-4" id="personInfo">
-            <div class="rounded overflow-hidden">
+            <div class="rounded overflow-hidden" v-if="currentTestimonial.picture">
               <img
                 :src="currentTestimonial.picture"
                 alt="Author"
@@ -196,7 +203,7 @@ export default {
               />
             </div>
           </div>
-          <div
+          <!-- <div
             id="standTypeAndLocale"
             class="grid grid-cols-2 grid-rows-1 gap-4"
           >
@@ -215,7 +222,7 @@ export default {
                 <span class="text-[18px]">Data</span>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </transition>

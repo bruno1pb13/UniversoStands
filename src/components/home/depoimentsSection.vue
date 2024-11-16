@@ -29,9 +29,15 @@ export default {
       let dp = [];
 
       for (let i = 0; i < 4; i++) {
+
+        let pic = this.$t(`depoiments.list[${i}].picture`)
+        if(pic == `depoiments.list[${i}].picture`){
+          pic = undefined
+        }
+
         dp.push({
           author: this.$t(`depoiments.list[${i}].author`),
-          picture: this.$t(`depoiments.list[${i}].picture`),
+          picture: pic,
           enterprise: this.$t(`depoiments.list[${i}].enterprise`),
           content: this.$t(`depoiments.list[${i}].content`),
           img: this.$t(`depoiments.list[${i}].img`),
@@ -83,7 +89,7 @@ export default {
         <div class="h-8"></div>
         <div class="flex gap-4">
           <div class="rounded overflow-hidden">
-            <img
+            <img v-if="currentTestimonial.picture"
               :src="currentTestimonial.picture"
               alt="Author"
               class="w-[5em] h-[5em] object-cover"

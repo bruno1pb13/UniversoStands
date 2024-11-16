@@ -12,12 +12,12 @@ export default {
 
 <template>
     <section class=" pt-[7em] flex flex-col items-center ">
-        <div class="flex flex-col sm:flex-row items-center justify-between px-[2em] sm:px-[7em] w-full">
+        <div class="flex flex-col sm:flex-row items-center justify-between px-[2em] sm:px-[7em] w-full h-[25em]">
             <div class="w-full ">
                 <span class="text-[30px] sm:text-[45px] font-light italic" style="font-weight:200"> {{$t('about.title')}}</span>
             </div>
             <div class="w-full  ">
-                <img src="/assets/lorem/equip.png" alt="">
+                <!-- <img src="/assets/lorem/equip.png" alt=""> -->
             </div>
         </div>
         <div class="pattern w-full h-[8em]"></div>

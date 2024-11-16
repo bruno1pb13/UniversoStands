@@ -5,17 +5,12 @@ export default {
       currentIndex: 0,
       depoiments: [
         {
-          alt: "Jackson Viapiana",
-          img: "https://img.freepik.com/fotos-gratis/por-do-sol-e-silhuetas-de-arvores-nas-montanhas-generative-ai_169016-29371.jpg",
+          img: "/assets/stands/cenografico/porcelanaMonteSiao02.jpg",
         },
         {
-          alt: "Jackson Viapiana",
-          img: "https://t4.ftcdn.net/jpg/05/21/18/03/360_F_521180377_2iAVJqBQSo3cgKaVp8vMBR8asrC61DoU.jpg",
-        },
+          img: "/assets/stands/cenografico/graniAmici.jpeg"        },
         {
-          alt: "Jackson Viapiana",
-          img: "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
-        },
+          img: "/assets/stands/cenografico/origetec02.JPG"        },
       ],
     };
   },

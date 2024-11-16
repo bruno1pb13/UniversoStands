@@ -113,31 +113,21 @@
     "depoiments": {
         "list": [
             {
+                "author": "Alvaro Flores",
+                "picture": "/assets/depoiments/alvaroFlores.jpg",
+                "enterprise": "Grupo MK Química ",
+                "content": "Há muitos anos temos trabalhado com a Universo Stands. Desde sempre, fomos atendidos com excelência e os projetos foram muito bem executados. Também vale destacar a criatividade e as soluções apresentadas para as nossas demandas. Competência e relacionamento são as palavras que posso destacar na nossa parceria.",
+                "img": "/assets/depoiments/alvaroFloresStand.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            },
+            {
                 "author": "Roberta Viena",
                 "picture": "/assets/depoiments/roberta.jpg",
-                "enterprise": "",
+                "enterprise": "Geave",
                 "content": "Trabalho com a Universo há um tempo, empresa super competente, com qualidade de produtos, serviços, atendiemnto ao cliente e com muita eficiência operacional. Eloilza sempre muito simpática, paciente e prestativa.",
-                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
-                "standType": "gold",
-                "locale": "Feira xyz",
-                "date": "25/10/2023"
-            },
-            {
-                "author": "Sabrina Avelar",
-                "picture": "/assets/depoiments/sabrina.png",
-                "enterprise": "",
-                "content": "Profissional excelente! Super indico! Sucesso!",
-                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
-                "standType": "gold",
-                "locale": "Feira xyz",
-                "date": "25/10/2023"
-            },
-            {
-                "author": "Jackson Viapiana",
-                "picture": "/assets/depoiments/jack.jpg",
-                "enterprise": "KARIKAL",
-                "content": "Muito boa.",
-                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "img": "/assets/depoiments/standRoberta.jpg",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"
@@ -147,7 +137,16 @@
                 "picture": "/assets/depoiments/eduardo.jpg",
                 "enterprise": "",
                 "content": "Sempre nos atenderam muito bem!",
-                "img": "https://static3.depositphotos.com/1003352/159/i/450/depositphotos_1592977-stock-photo-tropical-beach.jpg",
+                "img":  "/assets/depoiments/plastecnica.jpg",
+                "standType": "gold",
+                "locale": "Feira xyz",
+                "date": "25/10/2023"
+            },
+            {
+                "author": "Jessica",
+                "enterprise": "Tecnofluid",
+                "content": "Obrigada pelo carinho e cuidado com nossa imagem durante toda a preparação. Sempre atenciosos e dispostos a entregar o melhor. Seguimos em frente e nos vemos nos próximos eventos Brasil a fora 🚀🙌🏽",
+                "img": "/assets/depoiments/tecnofluidStand.jpg",
                 "standType": "gold",
                 "locale": "Feira xyz",
                 "date": "25/10/2023"
