@@ -58,19 +58,19 @@
         "title": "Stands",
         "diamante": {
             "title": "Stand Diamante",
-            "description": "Aqui a imaginação é sem limites. Nessa modalidade você receberá todos os materiais do Stand Misto, com o acréscimo de mais paisagismo, iluminação especial em LED e projetos cenográficos mais sofisticados. Tudo para deixar a sua marca e seu stand super destacados na exposição."
+            "description": "Aqui a imaginação é sem limites. Nessa modalidade você receberá todos os materiais do Stand Misto, com o acréscimo de mais paisagismo, iluminação especial em LED e projetos cenográficos mais sofisticados. Tudo para deixar a sua marca mais destacada na exposição."
         },
         "prata": {
             "title": "Stand Ouro",
-            "description": "Nessa modalidade você terá a opção de um stand construido em octanorme e madeira, opção de baixo custo com um toque personalizado"
+            "description": "Nessa modalidade você terá a opção de um stand construído em madeira, iluminação especial, personalizável em todas as formas."
         },
         "ouro": {
-            "title": "Stand Misto",
-            "description": "Nessa modalidade você terá a opção de um stand construído em madeira, estruturas metálicas e vidro. Os revestimentos podem variar de acordo com a sua preferência, o mobiliário e a iluminação são personalizados e o paisagismo é básico."
+            "title": "Stand Prata",
+            "description": "Nessa modalidade você terá a opção de um stand construído em octanorme e madeira, opção de baixo custo com um toque personalizado."
         },
         "basic": {
-            "title": "Stand Basico",
-            "description": "Nessa modalidade você terá um stand construído com material básico em madeira, vidro ou ambos, com revestimentos básicos, sendo uma excelente opção para quem busca baixo custo."
+            "title": "Stand Básico",
+            "description": "Nessa modalidade você terá um stand construído com material básico em octanorme, vidro ou ambos, com revestimentos básicos, sendo uma excelente opção para quem busca baixo custo."
         }
     },
     "about": {

@@ -181,20 +181,20 @@ export default {
     <section class="px-[2em] sm:px-[7em] py-[4em] flex flex-col gap-14">
         <section class="flex flex-col gap-4">
             <div class="flex flex-col gap-2">
-                <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.diamante.title') }}</span>
-                <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.diamante.description') }}</span>
+                <span class="font-bold text-[30px] sm:text-[35px]">{{ $t('stands.diamante.title') }}</span>
+                <span class="text-[15px] sm:text-[20px] font-normal">{{ $t('stands.diamante.description') }}</span>
             </div>
             <div class="flex flex-col gap-2">
-                <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.prata.title') }}</span>
-                <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.prata.description') }}</span>
+                <span class="font-bold text-[30px] sm:text-[35px]">{{ $t('stands.prata.title') }}</span>
+                <span class="text-[15px] sm:text-[20px] font-normal">{{ $t('stands.prata.description') }}</span>
             </div>
             <div class="flex flex-col gap-2">
-                <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.ouro.title') }}</span>
-                <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.ouro.description') }}</span>
+                <span class="font-bold text-[30px] sm:text-[35px]">{{ $t('stands.ouro.title') }}</span>
+                <span class="text-[15px] sm:text-[20px] font-normal">{{ $t('stands.ouro.description') }}</span>
             </div>
             <div class="flex flex-col gap-2">
-                <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.basic.title') }}</span>
-                <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.basic.description') }}</span>
+                <span class="font-bold text-[30px] sm:text-[35px]">{{ $t('stands.basic.title') }}</span>
+                <span class="text-[15px] sm:text-[20px] font-normal">{{ $t('stands.basic.description') }}</span>
             </div>
         </section>
 
