@@ -54,18 +54,22 @@
     },
     "stands": {
         "title": "Stands",
-        "scenographic": {
-            "title": "Scenographic Stand",
+        "diamante": {
+            "title": "Diamond stand",
             "description": "Here, imagination knows no bounds. In this option, you will receive all the materials from the Mixed Stand, with the addition of more landscaping, special LED lighting, and more sophisticated scenographic designs. Everything to make your brand and stand stand out at the exhibition."
-          },
-          "mixed": {
-            "title": "Mixed Stand",
+        },
+        "prata": {
+            "title": "Silver stand",
+            "description": "In this category, you will have the option of a stand built with octanorm and wood, a low-cost alternative with a personalized touch."
+        },
+        "ouro": {
+            "title": "Gold stand",
             "description": "In this option, you will have the choice of a stand built with wood, metal structures, and glass. The finishes can vary according to your preference, the furniture and lighting are customized, and the landscaping is basic."
-          },
-          "basic": {
-            "title": "Basic Stand",
+        },
+        "basic": {
+            "title": "Basic stand",
             "description": "In this option, you will have a stand built with basic material, either wood, glass, or both, with basic finishes, making it an excellent option for those looking for a low-cost solution."
-          }
+        }
     },
     "about": {
         "title": "UNDERSTANDING YOUR NEEDS IS THE PRINCIPLE OF OUR SERVICE",

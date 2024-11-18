@@ -83,9 +83,9 @@ export default {
                 },
             ],
             basicImages: [
-                
 
-            {
+
+                {
                     itemImageSrc: 'assets/stands/basico/brave00.mp4',
                     thumbnailImageSrc: 'assets/stands/basico/brave00.mp4',
                     alt: 'Brave Asset',
@@ -110,7 +110,7 @@ export default {
                     thumbnailImageSrc: 'assets/stands/basico/brave03.webp',
                     alt: 'Brave Asset',
                 },
-               
+
                 {
                     itemImageSrc: 'assets/stands/basico/vemax01.webp',
                     thumbnailImageSrc: 'assets/stands/basico/vemax01.webp',
@@ -138,7 +138,7 @@ export default {
                 {
                     breakpoint: '560px',
                     containerStyle: {
-                        "max-width" : "100%"
+                        "max-width": "100%"
                     },
                 }
             ],
@@ -152,7 +152,7 @@ export default {
     methods: {
         openGallery(galerry, index) {
             this.activeGallery = this[galerry],
-            this.activeIndex = index || 0
+                this.activeIndex = index || 0
             this.galerryVisible = true
         },
         closeGalerry(x) {
@@ -168,8 +168,8 @@ export default {
     </section>
 
     <Galleria v-model:visible="galerryVisible" @update:visible="closeGalerry" v-model:activeIndex="activeIndex"
-        :responsiveOptions="responsiveOptions" :value="activeGallery"  containerStyle="max-width: 80%"
-        :circular="true" :fullScreen="true" :showItemNavigators="false" :showThumbnails="false">
+        :responsiveOptions="responsiveOptions" :value="activeGallery" containerStyle="max-width: 80%" :circular="true"
+        :fullScreen="true" :showItemNavigators="false" :showThumbnails="false">
         <template #item="slotProps">
             <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
         </template>
@@ -179,9 +179,27 @@ export default {
     </Galleria>
 
     <section class="px-[2em] sm:px-[7em] py-[4em] flex flex-col gap-14">
+        <section class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
+                <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.diamante.title') }}</span>
+                <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.diamante.description') }}</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.prata.title') }}</span>
+                <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.prata.description') }}</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.ouro.title') }}</span>
+                <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.ouro.description') }}</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.basic.title') }}</span>
+                <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.basic.description') }}</span>
+            </div>
+        </section>
+
         <section class="flex flex-col gap-8">
-            <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.scenographic.title') }}</span>
-            <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.scenographic.description') }}</span>
+
             <div>
                 <div class="grid grid-cols-12 grid-rows-10 gap-4 h-[30em] sm:h-[60em]">
                     <div @click="openGallery('scenographicImages', 0)"
@@ -215,8 +233,6 @@ export default {
             </div>
         </section>
         <section class="flex flex-col gap-8">
-            <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.mixed.title') }}</span>
-            <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.mixed.description') }}</span>
             <div>
                 <div class="grid grid-cols-12 grid-rows-12 gap-4 h-[30em] sm:h-[60em]">
                     <div @click="openGallery('mistImages', 0)"
@@ -244,20 +260,18 @@ export default {
                         <img :src="mistImages[5].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                     <div @click="openGallery('mistImages', 6)"
-                        class="hidden sm:blockbg-gray-700 rounded col-span-4 row-span-8 col-start-5 row-start-5 overflow-hidden">
+                        class="hidden sm:block bg-gray-700 rounded col-span-4 row-span-8 col-start-5 row-start-5 overflow-hidden">
                         <img :src="mistImages[6].itemImageSrc" class="w-full  h-full object-cover" />
                     </div>
                 </div>
             </div>
         </section>
         <section class="flex flex-col gap-8">
-            <span class="font-bold text-[30px] sm:text-[40px]">{{ $t('stands.basic.title') }}</span>
-            <span class="text-[15px] sm:text-[25px] font-normal">{{ $t('stands.basic.description') }}</span>
+
 
             <div>
                 <div class="grid grid-cols-12 grid-rows-13 gap-4 h-[30em] sm:h-[60em]">
-                    <div
-                        class=" hidden sm:block bg-gray-700 rounded col-span-2 row-span-8 overflow-hidden">
+                    <div class=" hidden sm:block bg-gray-700 rounded col-span-2 row-span-8 overflow-hidden">
                         <video class="w-full h-full object-cover responsive-video" controls autoplay muted>
                             <source :src="basicImages[0].itemImageSrc" type="video/mp4" />
                             Seu navegador não suporta o elemento de vídeo.
@@ -292,7 +306,9 @@ export default {
 .responsive-video {
     width: auto;
     height: 100%;
-    aspect-ratio: 9/16; /* Ajuste conforme necessário */
-    object-fit: cover; /* Opcional: para preencher o contêiner */
+    aspect-ratio: 9/16;
+    /* Ajuste conforme necessário */
+    object-fit: cover;
+    /* Opcional: para preencher o contêiner */
 }
 </style>
