@@ -1,5 +1,40 @@
-# Vue 3 + Vite
+# UniversoStands
+UniversoStands is a web application developed using Vue 3 and Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Features
+- Vue 3 Composition API: Utilizes the latest Vue 3 <script setup> SFCs for a modern development experience.
+- Vite: Employs Vite for fast and efficient bundling.
+- Tailwind CSS: Incorporates Tailwind CSS for utility-first styling.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Installation
+To set up the project locally, follow these steps:
+
+Clone the repository:
+
+```bash
+git clone https://github.com/bruno1pb13/UniversoStands.git
+```
+Navigate to the project directory:
+
+```bash
+cd UniversoStands
+```
+Install dependencies:
+
+```bash
+npm install
+```
+Run the development server:
+
+```bash
+npm run dev
+```
+The application will be accessible at http://localhost:3000
+
+## License
+
+This software and its source code are the exclusive property of US-Brasil. All rights are reserved.
+
+Unauthorized copying, distribution, modification, or any other use of this software, via any medium, is strictly prohibited without prior written consent from US-Brasil.
+
+For inquiries regarding licensing, please contact us@us-brasil.com.
