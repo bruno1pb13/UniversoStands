@@ -6,6 +6,19 @@ export default {
       contact: constants.contact,
     };
   },
+  mounted() {
+    const formDivId = "home-newsletter-0bfa7d34f58d189df379";
+
+    const script1 = document.createElement("script");
+    script1.src =
+      "https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js";
+    script1.onload = () => {
+      if (window.RDStationForms) {
+        new window.RDStationForms(formDivId, null).createForm();
+      }
+    };
+    document.body.appendChild(script1);
+  },
 };
 </script>
 
@@ -74,7 +87,13 @@ export default {
     </div>
   </section>
   <section class="hidden sm:block" id="contact">
-    <div class="grid grid-cols-8 grid-rows-4 py-[7vw] px-[7em]">
+    <div
+      class="py-[2em] px-[7em]"
+      role="main"
+      :id="'home-newsletter-0bfa7d34f58d189df379'"
+    ></div>
+
+    <div class="grid grid-cols-8 grid-rows-4 py-[2em] px-[7em]">
       <div class="col-span-7 row-span-1">
         <div class="flex flex-col gap-4">
           <span class="font-bold text-[20px] sm:text-[30px]">{{
